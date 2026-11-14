@@ -1,59 +1,215 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#2525EF"><meta name="description" content="Conoce el Policy Brief de GETS sobre la contracción de la matrícula escolar en Chile y sus desafíos hacia 2035."><title>La matrícula está cambiando | GETS Insights</title><style>
-:root{--blue:#2525EF;--mint:#6FDDAB;--yellow:#F2BC06;--coral:#FF4824;--ink:#1A1A1A;--ice:#F2F7FD;--line:#e3e5ea;--w:1120px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}button:disabled{cursor:not-allowed}p{line-height:1.55}.container{width:min(var(--w),calc(100% - 60px));margin:auto}.top-progress{position:fixed;left:0;top:0;height:3px;width:0;background:var(--coral);z-index:100;pointer-events:none}
-.header{height:72px;border-bottom:1px solid #e8e8e8;display:flex;align-items:center;background:#fff;position:sticky;top:0;z-index:50}.header-in{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:14px}.brand img{display:block;width:100px;height:auto}.brand-divider{width:1px;height:22px;background:#bbb}.brand-label{font-weight:800;letter-spacing:.12em;font-size:10px}.nav{display:flex;align-items:center;gap:26px}.nav a{font-size:12px;font-weight:700}.nav a:hover{color:var(--blue)}.pill{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:white!important;border-radius:99px;padding:12px 19px;font-size:12px;font-weight:700;border:0;transition:transform .25s,background .25s}.pill:hover{background:var(--blue);transform:translateY(-2px)}.pill.blue{background:var(--blue)}.pill.blue:hover{background:var(--ink)}.pill.light{background:white;color:var(--ink)!important}.pill.light:hover{background:var(--mint)}.eyebrow{font-size:10px;letter-spacing:.14em;font-weight:800;text-transform:uppercase}.eyebrow.blue{color:var(--blue)}.arrow{font-size:17px;line-height:1}
-.hero{background:#fff;overflow:hidden}.hero-grid{min-height:550px;display:grid;grid-template-columns:53% 47%;align-items:center;gap:0}.hero-copy{padding:65px 45px 72px 0;position:relative;z-index:2}.hero h1{max-width:590px;font-size:clamp(40px,4.5vw,62px);letter-spacing:-.058em;line-height:1.07;margin:19px 0 20px;font-weight:800}.hero h1 span{color:var(--blue)}.hero p{font-size:16px;max-width:475px;margin:0 0 26px}.hero-actions{display:flex;align-items:center;gap:21px;flex-wrap:wrap}.hero-actions small{font-size:11px;color:#686868;line-height:1.4}.hero-visual{min-height:510px;height:100%;display:flex;align-items:center;justify-content:center;position:relative;isolation:isolate}.hero-visual:before{content:"";width:95%;height:79%;background:var(--mint);position:absolute;right:-13%;top:10%;border-radius:2px}.hero-visual:after{content:"";position:absolute;background:var(--yellow);width:66px;height:15px;top:11%;right:2%;transform:rotate(-20deg)}
-.mockup{width:min(365px,82%);height:455px;position:relative;z-index:3;filter:drop-shadow(19px 28px 18px #1a1a1a24);transform:rotate(-5deg);transition:transform .5s cubic-bezier(.2,.8,.2,1)}.hero-visual:hover .mockup{transform:rotate(-2deg) translateY(-8px)}.mockup-inner{height:100%;background:var(--blue);color:white;padding:26px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.mockup-header{display:flex;justify-content:space-between;align-items:start;font-size:10px;position:relative;z-index:2}.mockup-header img{width:98px;display:block}.mockup-title{font-size:clamp(29px,3.2vw,45px);font-weight:800;letter-spacing:-.06em;line-height:1.08;max-width:290px;position:relative;z-index:2}.mockup-sub{font-size:10px;line-height:1.5;max-width:220px;position:relative;z-index:2}.mockup-bars{position:absolute;right:-14px;top:84px;transform:rotate(-18deg);display:flex;flex-direction:column;gap:13px}.mockup-bars i{display:block;background:var(--mint);width:160px;height:48px;transform:skew(-12deg)}.mockup-bars i:nth-child(2){width:140px;margin-left:33px}.mockup-bars i:nth-child(3){width:195px;margin-left:-8px}.mockup-bars i:nth-child(4){width:130px;margin-left:65px}.mockup-side{position:absolute;right:-6%;bottom:8%;width:38%;height:68%;background:#f2bc06;transform:rotate(12deg);z-index:1;opacity:.85}.mockup-tag{position:absolute;left:0;bottom:24px;background:white;color:var(--blue);font-size:10px;font-weight:800;padding:13px 17px;z-index:4;transform:rotate(4deg)}
-.trustline{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ice)}.trustline-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 0}.trustline span{font-size:11px;font-weight:700}.trustline strong{color:var(--blue)}.trustline .dot{background:var(--blue);width:4px;height:4px;border-radius:50%;flex:none}
-.sec{padding:92px 0}.section-intro{display:flex;justify-content:space-between;align-items:end;gap:70px}.section-intro h2,.section-title{font-size:clamp(34px,3.6vw,49px);line-height:1.1;letter-spacing:-.05em;font-weight:800;margin:16px 0 0;max-width:690px}.section-intro p{font-size:15px;max-width:360px;color:#515151;margin:0 0 4px}
-.metrics{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.metric{padding:26px 28px 23px 0}.metric+.metric{padding-left:28px;border-left:1px solid var(--line)}.metric strong{font-size:clamp(41px,4vw,57px);display:block;color:var(--blue);font-weight:800;letter-spacing:-.07em;line-height:1.15}.metric h3{font-size:17px;line-height:1.24;margin:13px 0 9px;letter-spacing:-.02em}.metric p{color:#606060;margin:0;font-size:12px}.source{font-size:10px;color:#777;line-height:1.5;margin:18px 0 0}
-.photo-story{background:var(--mint);overflow:hidden}.photo-grid{display:grid;grid-template-columns:48% 52%;align-items:stretch;min-height:465px}.photo-box{margin-left:calc((min(100vw,1120px) - 100vw)/2);position:relative;min-height:465px;background:#a3dabe}.photo-box img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo-box .photo-label{position:absolute;bottom:0;right:0;background:var(--yellow);font-size:11px;font-weight:800;letter-spacing:.04em;padding:20px}.photo-copy{padding:72px 0 65px 11%;display:flex;flex-direction:column;justify-content:center;align-items:start}.photo-copy h2{font-size:clamp(33px,3.5vw,48px);line-height:1.1;letter-spacing:-.05em;margin:16px 0}.photo-copy h2 span{color:var(--blue)}.photo-copy p{max-width:440px;font-size:14px;margin:0 0 24px}.underlink{font-size:12px;font-weight:800;border-bottom:2px solid var(--ink);padding-bottom:8px;display:inline-flex;gap:30px}.underlink:hover{color:var(--blue);border-color:var(--blue)}
-.inside{background:#fff}.inside-grid{display:grid;grid-template-columns:35% 1fr;gap:9%}.inside-left h2{font-size:clamp(31px,3.35vw,45px);letter-spacing:-.05em;line-height:1.13;margin:19px 0}.inside-left p{font-size:14px;max-width:285px;color:#575757}.inside-rows{border-top:1px solid var(--line)}.inside-row{display:grid;grid-template-columns:44px 1fr 25px;gap:14px;align-items:start;padding:23px 0;border-bottom:1px solid var(--line)}.inside-row small{font-size:11px;font-weight:800;color:var(--blue)}.inside-row strong{font-size:19px;letter-spacing:-.025em;line-height:1.2}.inside-row p{color:#666;font-size:13px;line-height:1.5;margin:8px 0 0}.inside-row>span{color:var(--blue)}
-.action-banner{background:var(--blue);color:#fff;overflow:hidden}.action-inner{min-height:225px;display:flex;align-items:center;justify-content:space-between;gap:50px;position:relative}.action-inner:after{content:"";position:absolute;right:130px;top:-35px;background:var(--mint);width:100px;height:36px;transform:rotate(-28deg);pointer-events:none}.action-inner h2{font-size:clamp(30px,3.25vw,45px);line-height:1.14;letter-spacing:-.052em;max-width:690px;margin:0}.action-inner h2 em{color:var(--mint);font-style:normal}
-.download{padding:94px 0;background:#f2f7fd}.download-layout{display:grid;grid-template-columns:44% 1fr;gap:10%;align-items:start}.download-copy{position:sticky;top:120px}.download-copy h2{font-size:clamp(35px,3.7vw,51px);line-height:1.1;letter-spacing:-.053em;margin:18px 0}.download-copy p{font-size:14px;line-height:1.6;max-width:400px;color:#515151}.download-copy .point{border-top:1px solid #d9dce6;margin-top:26px;padding-top:20px;display:flex;gap:11px;align-items:center;font-size:12px;font-weight:700}.point svg{width:20px;height:20px;color:var(--blue)}.form-card{background:#fff;border:1px solid #e4e5ed;padding:38px;box-shadow:12px 12px 0 var(--mint)}.form-card h3{font-size:26px;letter-spacing:-.045em;margin:0 0 9px}.form-card>p{font-size:13px;color:#666;margin:0 0 25px}.form-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field.full{grid-column:1/-1}.field label{display:block;font-size:11px;font-weight:800;margin-bottom:7px}.field input{width:100%;height:43px;border-radius:5px;border:1px solid #d6d9e1;padding:10px 13px;font-size:13px;background:#fff;outline:none}.field input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #2525ef12}.check{display:flex;gap:9px;align-items:start;margin:16px 0;font-size:11px;line-height:1.5}.check input{margin-top:2px;accent-color:var(--blue)}.form-note{font-size:11px;color:#787878;line-height:1.5}.status{font-size:12px;color:#b03321;min-height:18px;margin:10px 0}.submit{margin-top:9px;border:0}.foot{background:var(--ink);color:#fff}.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:95px}.foot-inner img{width:92px}.foot-inner p,.foot-inner a{font-size:11px;color:#eee}.foot-inner a:hover{color:var(--mint)}
-.modal-backdrop{position:fixed;inset:0;background:#000b;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal-backdrop.open{display:flex}.modal{background:#fff;padding:36px;max-width:430px;width:100%;position:relative;text-align:center}.modal .close{position:absolute;right:12px;top:8px;font-size:24px;border:0;background:none}.modal h2{font-size:28px;letter-spacing:-.04em}.modal p{font-size:14px}.modal .pill{margin-top:10px}
-.mobile-cta{display:none}
-html.has-js .reveal{opacity:0;transform:translateY(19px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}html.has-js .reveal.visible{opacity:1;transform:none}html.has-js .reveal.delayed{transition-delay:.12s}
-@media(max-width:920px){.container{width:calc(100% - 44px)}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(36px,5vw,49px)}.hero-copy{padding-right:22px}.hero-visual{min-height:455px}.mockup{height:390px}.mockup-title{font-size:35px}.photo-box{margin-left:-22px}.photo-copy{padding-left:8%}.nav{gap:14px}.inside-grid{gap:6%}.download-layout{gap:6%}}
-@media(max-width:700px){.header{height:63px}.nav a:not(.nav-cta){display:none}.brand img{width:88px}.brand-label{font-size:9px}.hero-grid,.photo-grid,.inside-grid,.download-layout{grid-template-columns:1fr}.hero-copy{padding:52px 0 18px}.hero h1{font-size:clamp(38px,8vw,52px);max-width:590px}.hero p{font-size:15px}.hero-visual{height:380px;min-height:380px}.mockup{height:340px;width:270px}.mockup-title{font-size:32px}.mockup-header img{width:80px}.mockup-inner{padding:21px}.mockup-tag{font-size:9px}.hero-visual:before{width:86%;height:91%;right:3%;top:4%}.trustline-inner{flex-wrap:wrap;gap:8px;padding:15px 0}.trustline .dot{display:none}.sec{padding:68px 0}.section-intro{display:block}.section-intro p{margin-top:20px}.metrics{grid-template-columns:1fr}.metric,.metric+.metric{border-left:0;padding:20px 0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.metric strong{font-size:48px}.metric h3{margin:7px 0}.photo-box{margin:0 -22px;min-height:290px}.photo-copy{padding:54px 0}.inside-left p{max-width:460px}.action-inner{min-height:0;padding:54px 0;display:block}.action-inner .pill{margin-top:23px}.action-inner:after{right:10px}.download{padding:64px 0 80px}.download-copy{position:static}.download-copy .point{margin-bottom:24px}.form-card{padding:26px}.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:45;background:#fff;padding:10px 18px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -5px 22px #0001;justify-content:center;border-top:1px solid #eee}.mobile-cta .pill{width:min(420px,100%);justify-content:space-between}.foot{padding-bottom:65px}.foot-inner{padding:26px 0;align-items:start;flex-direction:column;min-height:0;gap:8px}}
-@media(max-width:410px){.container{width:calc(100% - 34px)}.hero h1{font-size:36px}.section-intro h2,.section-title{font-size:34px}.form-fields{grid-template-columns:1fr}.field.full{grid-column:auto}.inside-row strong{font-size:17px}.action-inner h2{font-size:31px}.photo-box{margin:0 -17px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.has-js .reveal{opacity:1;transform:none;transition:none}.mockup,.pill{transition:none!important}}
-</style></head><body><div class="top-progress" id="progress" aria-hidden="true"></div>
-<header class="header"><div class="container header-in"><a href="#inicio" class="brand" aria-label="GETS Insights, inicio"><img src="assets/gets-logo.svg" alt="GETS"><span class="brand-divider"></span><span class="brand-label">INSIGHTS</span></a><nav class="nav" aria-label="Secciones"><a href="#hallazgos">El escenario</a><a href="#contenido">Qué encontrarás</a><a href="#descargar" class="pill nav-cta">Descargar estudio <span>↗</span></a></nav></div></header>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#F2BC06">
+<meta name="description" content="La contracción de la matrícula escolar en Chile. Descubre qué implican las proyecciones al 2035 para la gestión y sostenibilidad de los establecimientos educativos.">
+<meta property="og:title" content="La matrícula escolar está cambiando | GETS Insights">
+<meta property="og:description" content="Un Policy Brief para anticipar los desafíos educativos de la próxima década.">
+<title>La matrícula escolar está cambiando | GETS Insights</title>
+<style>
+:root{--blue:#2525EF;--yellow:#F2BC06;--mint:#6FDDAB;--orange:#FF4824;--ink:#1A1A1A;--ice:#F2F7FD;--content:1190px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}button{cursor:pointer}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.container{width:min(var(--content),calc(100% - 72px));margin:auto}
+.site-nav{background:#fff;border-bottom:1px solid var(--ink);position:sticky;top:0;z-index:40}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo-link{display:flex;gap:18px;align-items:center}.logo-link img{width:112px;display:block}.logo-link span{border-left:1px solid #c6c6c6;padding-left:17px;font-size:11px;letter-spacing:.1em;font-weight:800}
+.nav-links{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:700}
+.nav-links a:not(.nav-cta):hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:15px;border:0;background:#111;color:#fff;padding:12px 20px;border-radius:50px;font-size:12px;font-weight:700;transition:transform .22s,background .22s}
+.btn:hover{transform:translateY(-2px);background:var(--blue)}
+.btn .btn-icon{border:1px solid currentColor;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;font-size:14px;line-height:1}
+.eyebrow{display:block;font-size:11px;letter-spacing:.17em;font-weight:800;text-transform:uppercase}
+.hero{background:var(--yellow);overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,transparent 0 46%,#fff2 46% 60%,transparent 60%),linear-gradient(10deg,transparent 0 68%,#fff2 68% 78%,transparent 78%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:49% 51%;min-height:565px;align-items:center;position:relative;z-index:1}
+.hero-copy{padding:67px 30px 67px 0}
+.hero h1{font-size:clamp(41px,4.2vw,60px);line-height:1.08;letter-spacing:-.05em;margin:26px 0 19px;font-weight:800;max-width:560px}
+.hero h1 em{font-style:normal;color:#806000}
+.hero-lede{max-width:470px;font-size:16px;line-height:1.56;margin:0 0 30px}
+.hero-sub{font-size:11px;margin-top:25px;font-weight:700;letter-spacing:.04em}
+.hero-art{height:435px;position:relative;display:flex;align-items:center;justify-content:flex-end}
+.hero-photo{height:94%;width:96%;object-fit:cover;object-position:center;border-radius:22px;clip-path:polygon(2% 11%,98% 0,100% 91%,8% 100%);position:relative;z-index:2}
+.hero-art:after{content:"";position:absolute;top:-25px;right:-46px;width:77px;height:420px;background:#edb500;transform:skew(-14deg);pointer-events:none}
+.hero-note{position:absolute;z-index:3;left:16px;bottom:14px;color:#fff;background:var(--blue);padding:14px 18px;font-size:10px;font-weight:800;letter-spacing:.08em}
+.intro{background:var(--ice);border-top:2px solid var(--blue);border-bottom:2px solid var(--blue);text-align:center;padding:94px 0 98px;position:relative;overflow:hidden}
+.intro h2{font-size:clamp(32px,3.7vw,51px);color:var(--blue);line-height:1.13;letter-spacing:-.046em;max-width:830px;margin:0 auto 21px}
+.intro p{font-size:18px;line-height:1.52;max-width:735px;margin:0 auto}
+.intro-ornament{height:12px;width:100px;background:var(--mint);transform:skew(-20deg);margin:0 auto 30px}
+.journey{background:#fff;padding:95px 0 105px}
+.journey-head{text-align:center;max-width:680px;margin:0 auto 73px}
+.journey-head .eyebrow{color:var(--blue)}
+.journey-head h2{font-size:clamp(31px,3.25vw,44px);line-height:1.14;letter-spacing:-.045em;margin:18px auto}
+.journey-head p{line-height:1.55;font-size:15px;color:#555}
+.timeline{position:relative}
+.timeline:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:#cfcfd7}
+.timeline-progress{position:absolute;top:0;left:50%;width:2px;background:var(--blue);height:0;z-index:1;transition:height .15s linear}
+.milestone{display:grid;grid-template-columns:1fr 1fr;min-height:260px;position:relative}
+.milestone+.milestone{border-top:1px solid #ececf1}
+.milestone:before{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:11px;width:11px;border-radius:50%;background:var(--ink);z-index:2}
+.milestone-art{display:flex;align-items:center;justify-content:center;padding:36px 60px}
+.milestone-copy{padding:45px 62px;display:flex;flex-direction:column;justify-content:center}
+.milestone:nth-child(even) .milestone-art{grid-column:2;grid-row:1}
+.milestone:nth-child(even) .milestone-copy{grid-column:1;grid-row:1}
+.milestone .eyebrow{color:var(--blue)}
+.milestone h3{font-size:clamp(22px,2.45vw,32px);line-height:1.18;letter-spacing:-.035em;margin:13px 0 14px}
+.milestone p{font-size:14px;line-height:1.58;color:#555;max-width:440px;margin:0}
+.shape{display:grid;place-items:center;width:min(250px,100%);height:175px;position:relative}
+.shape b{font-size:clamp(51px,6vw,80px);line-height:1;letter-spacing:-.07em;z-index:2;font-weight:800}
+.shape:before{content:"";position:absolute;inset:0;background:var(--mint);border-radius:9px;clip-path:polygon(13% 0,100% 0,89% 100%,0 92%)}
+.shape.yellow:before{background:var(--yellow);clip-path:polygon(0 0,87% 8%,100% 100%,12% 100%)}
+.shape.blue:before{background:var(--blue);clip-path:polygon(10% 8%,100% 0,89% 100%,0 89%)}
+.shape.blue b{color:#fff}
+.shape.orange:before{background:var(--orange);clip-path:polygon(0 10%,100% 0,91% 100%,9% 90%)}
+.method-note{font-size:11px;color:#676767;border-top:1px solid #ddd;padding-top:20px;line-height:1.55;margin-top:20px}
+.cta-wrap{padding:60px 0 88px;background:#fff}
+.cta-panel{min-height:350px;background:var(--orange);border-radius:9px;display:grid;grid-template-columns:46% 54%;overflow:hidden}
+.cta-graphic{position:relative;overflow:hidden}
+.cta-graphic span{position:absolute;display:block;width:125%;height:88px;background:#ff8068;border-radius:0 10px 10px 0}
+.cta-graphic span:nth-child(1){transform:rotate(-38deg);left:-30%;top:14%}
+.cta-graphic span:nth-child(2){transform:rotate(-25deg);left:-15%;top:48%}
+.cta-graphic span:nth-child(3){transform:rotate(-5deg);left:4%;top:83%}
+.cta-content{padding:65px 50px 60px 12px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.cta-content h2{font-size:clamp(30px,3.15vw,45px);line-height:1.15;letter-spacing:-.04em;margin:0 0 30px;max-width:555px}
+.cta-content h2 em{font-style:normal;color:#fff}
+.download{background:var(--blue);color:#fff;padding:88px 0}
+.download-layout{display:grid;grid-template-columns:43% 1fr;gap:9%;align-items:start}
+.download-copy{padding-top:7px}
+.download-copy h2{font-size:clamp(32px,3.7vw,49px);letter-spacing:-.045em;line-height:1.15;margin:21px 0}
+.download-copy p{font-size:15px;line-height:1.57;max-width:435px}
+.download-meta{display:flex;gap:12px;align-items:center;margin-top:30px;border-top:1px solid #ffffff70;padding-top:22px;font-size:12px;font-weight:700}
+.download-meta:before{content:"✓";font-size:15px;color:var(--mint)}
+.form-panel{background:white;color:var(--ink);padding:32px;border-radius:5px}
+.form-panel h3{font-size:25px;letter-spacing:-.04em;margin:0 0 10px}
+.form-panel>p{font-size:13px;color:#5c5c5c;line-height:1.5;margin:0 0 23px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field.wide{grid-column:1 / -1}
+.field label{display:block;font-size:11px;font-weight:750;margin-bottom:7px}
+.field input{height:44px;width:100%;border:1px solid #cfd2da;background:#fff;border-radius:5px;padding:11px 12px;font-size:13px}
+.field input:focus{outline:2px solid #2525ef40;outline-offset:0;border-color:var(--blue)}
+.checkbox-label{font-size:11px;line-height:1.5;display:flex;gap:9px;align-items:flex-start;margin-top:14px}
+.checkbox-label input{margin:3px 0 0;accent-color:var(--blue)}
+.form-button{margin-top:20px}
+.status{min-height:16px;color:#a82c1d;font-size:12px;margin:10px 0 0}
+.form-footnote{font-size:10px;color:#6c6c6c;line-height:1.55;margin:10px 0 0}
+.footer{background:var(--ink);color:#fff;padding:30px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;font-size:11px}
+.footer-inner img{width:100px}
+.scroll-progress{position:fixed;top:0;left:0;width:0;height:3px;background:var(--orange);z-index:100}
+html.enhanced .reveal{opacity:0;transform:translateY(23px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+html.enhanced .reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+.container{width:calc(100% - 44px)}
+.nav-links{gap:15px}
+.hero-grid{grid-template-columns:52% 48%}
+.hero h1{font-size:clamp(36px,5vw,48px)}
+.hero-art{height:350px}
+.hero-copy{padding:55px 19px 55px 0}
+.intro{padding:76px 0}
+.milestone-art{padding:25px}
+.milestone-copy{padding:35px}
+.cta-content{padding:45px 30px}
+.download-layout{grid-template-columns:40% 1fr;gap:5%}
+}
+@media(max-width:680px){
+.container{width:calc(100% - 34px)}
+.nav-inner{height:63px}
+.logo-link img{width:88px}.logo-link span{font-size:9px;padding-left:10px}
+.nav-links a:not(.nav-cta){display:none}
+.nav-links .btn{padding:9px 12px;font-size:10px}
+.hero-grid{grid-template-columns:1fr}
+.hero-copy{padding:52px 0 23px}
+.hero h1{font-size:clamp(36px,9vw,45px);margin:18px 0}
+.hero-lede{font-size:14px}
+.hero-art{height:270px;margin-bottom:29px}
+.hero-photo{height:100%;width:100%}
+.hero-note{font-size:9px;left:10px;bottom:3px}
+.intro{padding:64px 0}
+.intro h2{font-size:clamp(28px,7vw,37px)}
+.intro p{font-size:15px}
+.journey{padding:67px 0}
+.journey-head{margin-bottom:35px}
+.journey-head h2{font-size:33px}
+.timeline:before,.timeline-progress{left:12px}
+.milestone{display:flex;flex-direction:column;min-height:0;padding:14px 0 30px 37px}
+.milestone:before{top:34px;left:12px}
+.milestone:nth-child(even) .milestone-art,.milestone:nth-child(even) .milestone-copy{grid-column:auto;grid-row:auto}
+.milestone-art{padding:12px 0;order:0;justify-content:flex-start}
+.shape{width:165px;height:110px}.shape b{font-size:43px}
+.milestone-copy{padding:10px 0 0;order:1}
+.milestone h3{font-size:25px;margin:10px 0}
+.milestone p{font-size:13px}
+.cta-wrap{padding:22px 0 65px}
+.cta-panel{grid-template-columns:1fr}
+.cta-graphic{height:140px}
+.cta-content{padding:20px 25px 37px}
+.cta-content h2{font-size:30px}
+.download{padding:65px 0}
+.download-layout{grid-template-columns:1fr;gap:30px}
+.download-copy h2{font-size:37px}
+.form-panel{padding:24px}
+.footer-inner{flex-direction:column;align-items:flex-start;gap:12px}
+}
+@media(max-width:370px){.form-grid{grid-template-columns:1fr}.field.wide{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.enhanced .reveal{opacity:1;transform:none;transition:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+<header class="site-nav"><div class="container nav-inner"><a class="logo-link" href="#inicio" aria-label="GETS Insights"><img src="assets/gets-logo.svg" alt="GETS"><span>INSIGHTS</span></a><nav class="nav-links" aria-label="Secciones"><a href="#contexto">Contexto</a><a href="#hallazgos">Hallazgos</a><a class="btn nav-cta" href="#descargar"><span class="btn-icon">→</span> Descargar estudio</a></nav></div></header>
 <main id="inicio">
-<section class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow blue">GETS INSIGHTS / POLICY BRIEF · 2026</div><h1>La matrícula está cambiando. <span>¿Está preparado tu colegio?</span></h1><p>Menos estudiantes, nuevos desafíos para las comunidades educativas. Una investigación para entender lo que viene y tomar mejores decisiones desde hoy.</p><div class="hero-actions"><a href="#descargar" class="pill blue">Descargar informe <span class="arrow">↗</span></a><small>Estudio completo · 21 páginas<br>Acceso mediante registro</small></div></div>
-<div class="hero-visual" aria-label="Vista de la portada del informe GETS"><div class="mockup"><div class="mockup-inner"><div class="mockup-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="mockup-header"><img src="assets/gets-logo-white.svg" alt="GETS"><span>OCTUBRE / 2026</span></div><div class="mockup-title">La contracción de la matrícula escolar en Chile.</div><div class="mockup-sub">Efectos fiscales, territoriales e institucionales de la transición demográfica.<br><br>Nicolás Muñoz Pavez · Humberto Jiménez Acevedo</div></div></div><div class="mockup-tag">NUEVO INFORME · GETS 2026</div></div></div></section>
-<div class="trustline"><div class="container trustline-inner"><span><strong>POLICY BRIEF</strong> / OCTUBRE 2026</span><span class="dot"></span><span>DATOS, PROYECCIONES Y RECOMENDACIONES</span><span class="dot"></span><span>21 PÁGINAS DE ANÁLISIS</span></div></div>
-<section class="sec" id="hallazgos"><div class="container"><div class="section-intro reveal"><div><div class="eyebrow blue">EL ESCENARIO</div><h2>El futuro del sistema escolar ya está cambiando.</h2></div><p>La caída de la natalidad no es una proyección lejana. Sus efectos ya comenzaron a reflejarse en la matrícula de los establecimientos chilenos.</p></div>
-<div class="metrics"><article class="metric reveal"><strong>~29%</strong><h3>Menos matrícula al 2035</h3><p>Caída proyectada cercana al 29% en los niveles regulares.</p></article><article class="metric reveal delayed"><strong>~1 millón</strong><h3>Menos estudiantes</h3><p>Reducción aproximada proyectada para la próxima década.</p></article><article class="metric reveal"><strong>2.491</strong><h3>Establecimientos excedentes</h3><p>Capacidad estimada por sobre la demanda futura; no equivale a cierres.</p></article></div><p class="source">Fuente: Policy Brief GETS (octubre de 2026). Proyecciones y estimaciones sujetas a supuestos metodológicos. Las cifras son aproximaciones, no resultados observados.</p></div></section>
-<section class="photo-story"><div class="container photo-grid"><div class="photo-box"><img loading="lazy" src="https://cdn.prod.website-files.com/69497ae5cce6ea143f858137/6967ee6dd6924ad88b4ab7d0_Home_servicios-foto.png" alt="Experiencia educativa, imagen de GETS"><span class="photo-label">EDUCACIÓN QUE SE ANTICIPA ↗</span></div><div class="photo-copy reveal"><div class="eyebrow">EL DESAFÍO DE LIDERAR</div><h2>El cambio es inevitable. <span>Improvisar no debería serlo.</span></h2><p>Los equipos directivos y sostenedores tienen una oportunidad: anticipar decisiones sobre financiamiento, planificación e infraestructura antes de que el ajuste sea urgente.</p><a href="#contenido" class="underlink">Explorar el análisis <span>↗</span></a></div></div></section>
-<section class="sec inside" id="contenido"><div class="container inside-grid"><div class="inside-left reveal"><div class="eyebrow blue">DENTRO DEL ESTUDIO</div><h2>Más que cifras. Una mirada a lo que viene.</h2><p>Una investigación diseñada para comprender el impacto del cambio demográfico en la gestión educativa.</p></div><div class="inside-rows"><article class="inside-row reveal"><small>01</small><div><strong>La matrícula que viene</strong><p>Cómo ha evolucionado el sistema y qué muestran los escenarios al 2035.</p></div><span>↗</span></article><article class="inside-row reveal"><small>02</small><div><strong>El desafío del financiamiento</strong><p>Qué ocurre con las subvenciones cuando los ingresos bajan y los costos permanecen.</p></div><span>↗</span></article><article class="inside-row reveal"><small>03</small><div><strong>El impacto en cada territorio</strong><p>Por qué las decisiones de planificación requieren mirar más allá de los promedios nacionales.</p></div><span>↗</span></article><article class="inside-row reveal"><small>04</small><div><strong>Decisiones que no pueden esperar</strong><p>Recomendaciones para anticipar la reorganización de la oferta educativa con criterios claros.</p></div><span>↗</span></article></div></div></section>
-<section class="action-banner"><div class="container action-inner"><h2>Menos incertidumbre comienza con <em>mejores decisiones.</em></h2><a href="#descargar" class="pill light">Quiero el informe <span>↗</span></a></div></section>
-<section class="download" id="descargar"><div class="container download-layout"><div class="download-copy reveal"><div class="eyebrow blue">DESCARGA EL POLICY BRIEF</div><h2>Conoce los datos. Anticipa los desafíos.</h2><p>Accede a “La contracción de la matrícula escolar en Chile”, un estudio de GETS de Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p><p>Una mirada basada en evidencia para quienes lideran el futuro de las comunidades educativas.</p><div class="point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M7 12l3 3 7-7"/></svg>21 páginas · Octubre 2026 · Acceso mediante registro</div></div>
-<div class="form-card reveal"><h3>Accede al estudio completo.</h3><p>Completa tus datos profesionales. Habilitaremos la descarga una vez conectemos el registro seguro.</p><form id="lead-form"><div class="form-fields"><div class="field full"><label for="nombre">Nombre completo *</label><input id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre y apellido" maxlength="120" required></div><div class="field"><label for="cargo">Cargo *</label><input id="cargo" name="cargo" placeholder="Director/a, sostenedor/a..." maxlength="120" required></div><div class="field"><label for="institucion">Institución educativa *</label><input id="institucion" name="institucion" placeholder="Nombre de tu institución" maxlength="180" required></div><div class="field"><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" placeholder="nombre@colegio.cl" maxlength="180" required></div><div class="field"><label for="telefono">Número de teléfono *</label><input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="+56 9 1234 5678" minlength="8" maxlength="25" required></div></div>
-<label class="check"><input id="privacy" type="checkbox" required><span>Acepto el tratamiento de mis datos para gestionar la solicitud, de acuerdo con la política de privacidad de GETS. *</span></label><label class="check"><input id="marketing" type="checkbox"><span>Quiero recibir estudios y comunicaciones de GETS (opcional).</span></label><button class="pill blue submit" type="submit" id="submit">Solicitar descarga <span>↗</span></button><div class="status" id="status" aria-live="polite"></div><p class="form-note">El formulario aún no recibe datos. La descarga estará disponible tras habilitar el sistema seguro de registro y su política de privacidad.</p></form></div></div></section></main>
-<footer class="foot"><div class="container foot-inner"><a href="https://getseducacion.cl" aria-label="Volver a GETS"><img src="assets/gets-logo-white.svg" alt="GETS"></a><p>Gestión en Educación, Tecnología y Sustentabilidad</p><a href="https://getseducacion.cl">Volver a la web principal ↗</a></div></footer>
-<div class="mobile-cta"><a class="pill blue" href="#descargar">Descargar el estudio <span>↗</span></a></div>
-<div class="modal-backdrop" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><div class="modal"><button class="close" id="close-modal" type="button" aria-label="Cerrar">×</button><h2 id="modal-title">Tu estudio está listo.</h2><p>Gracias por registrarte. Ya puedes acceder al PDF.</p><a id="pdf-link" class="pill blue" href="#" target="_blank" rel="noopener">Descargar informe ↗</a></div></div><script>
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy"><span class="eyebrow">GETS INSIGHTS / OCTUBRE 2026</span><h1>La matrícula escolar está cambiando. <em>Tu institución necesita anticiparse.</em></h1><p class="hero-lede">Chile enfrenta una transformación demográfica que desafía la planificación, el financiamiento y la sostenibilidad de los establecimientos educativos.</p><a class="btn" href="#descargar"><span class="btn-icon">→</span> Descargar el estudio</a><p class="hero-sub">POLICY BRIEF · 21 PÁGINAS · ACCESO MEDIANTE REGISTRO</p></div>
+<div class="hero-art"><img class="hero-photo" src="https://cdn.prod.website-files.com/69497ae5cce6ea143f858137/6967d89e731004e570c67fd7_Home_hero-foto.png" alt="Comunidad educativa en una actividad escolar"><div class="hero-note">INVESTIGACIÓN GETS · 2026</div></div></div></section>
+<section class="intro" id="contexto"><div class="container reveal"><div class="intro-ornament" aria-hidden="true"></div><h2>Lo que hoy parece una tendencia, mañana será una decisión crítica.</h2><p>Este Policy Brief analiza cómo la contracción de la matrícula escolar podría transformar el financiamiento, la organización y la sostenibilidad de los establecimientos en Chile.</p></div></section>
+<section class="journey" id="hallazgos"><div class="container">
+<div class="journey-head reveal"><span class="eyebrow">LO QUE NECESITAS SABER</span><h2>Cuatro señales para anticipar el futuro.</h2><p>Una lectura de los hallazgos del estudio y sus implicancias para quienes lideran comunidades educativas.</p></div>
+<div class="timeline" id="timeline"><div class="timeline-progress" id="timeline-progress" aria-hidden="true"></div>
+<article class="milestone"><div class="milestone-art reveal"><div class="shape"><b>~29%</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">01 / UN CAMBIO ESTRUCTURAL</span><h3>Menos estudiantes, nuevos desafíos para todo el sistema.</h3><p>La matrícula de los niveles regulares podría reducirse cerca de un 29% hacia 2035, de acuerdo con los escenarios analizados.</p></div></article>
+<article class="milestone"><div class="milestone-art reveal"><div class="shape yellow"><b>~1M</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">02 / PLANIFICAR CON ANTICIPACIÓN</span><h3>Las nuevas generaciones serán más pequeñas.</h3><p>La magnitud aproximada de la reducción proyectada exige anticipar decisiones sobre oferta educativa, capacidad y sostenibilidad.</p></div></article>
+<article class="milestone"><div class="milestone-art reveal"><div class="shape blue"><b>2.491</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">03 / CAPACIDAD EDUCATIVA</span><h3>El desafío va mucho más allá de llenar salas.</h3><p>El estudio estima 2.491 establecimientos excedentes al 2035: una medida de capacidad, no una predicción de cierres.</p></div></article>
+<article class="milestone"><div class="milestone-art reveal"><div class="shape orange"><b>2035</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">04 / DECIDIR HOY</span><h3>Anticiparse puede marcar la diferencia.</h3><p>Para directores y sostenedores, comprender el contexto territorial y financiero es fundamental antes de tomar decisiones de largo plazo.</p></div></article>
+</div><p class="method-note">Fuente: Muñoz Pavez y Jiménez Acevedo, Policy Brief GETS, octubre de 2026. Proyecciones basadas en supuestos demográficos y de cobertura; cifras aproximadas y estimaciones, no resultados observados.</p></div></section>
+<section class="cta-wrap"><div class="container"><div class="cta-panel"><div class="cta-graphic" aria-hidden="true"><span></span><span></span><span></span></div><div class="cta-content reveal"><h2>No basta con reaccionar. <em>Necesitamos instituciones preparadas para liderar el cambio.</em></h2><a href="#descargar" class="btn"><span class="btn-icon">→</span> Acceder al informe</a></div></div></div></section>
+<section class="download" id="descargar"><div class="container download-layout">
+<div class="download-copy reveal"><span class="eyebrow">POLICY BRIEF · GETS INSIGHTS</span><h2>Comprender el cambio es el primer paso para liderarlo.</h2><p>Descarga <strong>La contracción de la matrícula escolar en Chile</strong>, un estudio que reúne evidencia, escenarios y recomendaciones sobre el futuro del sistema escolar.</p><p>Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p><div class="download-meta">Informe de 21 páginas · Octubre de 2026</div></div>
+<div class="form-panel reveal"><h3>Descarga el Policy Brief</h3><p>Déjanos tus datos profesionales para acceder al estudio completo.</p>
+<form id="lead-form">
+<div class="form-grid">
+<div class="field wide"><label for="nombre">Nombre completo *</label><input name="nombre" id="nombre" autocomplete="name" placeholder="Tu nombre y apellido" maxlength="120" required></div>
+<div class="field"><label for="cargo">Cargo *</label><input name="cargo" id="cargo" placeholder="Director/a, sostenedor/a..." maxlength="120" required></div>
+<div class="field"><label for="institucion">Institución educativa *</label><input name="institucion" id="institucion" placeholder="Nombre de tu institución" maxlength="180" required></div>
+<div class="field"><label for="email">Correo electrónico *</label><input name="email" id="email" type="email" autocomplete="email" placeholder="nombre@colegio.cl" maxlength="180" required></div>
+<div class="field"><label for="telefono">Número de teléfono *</label><input name="telefono" id="telefono" type="tel" autocomplete="tel" placeholder="+56 9 1234 5678" minlength="8" maxlength="25" required></div>
+</div>
+<label class="checkbox-label"><input id="privacy" type="checkbox" required><span>Acepto el tratamiento de mis datos para gestionar la solicitud del informe, según la política de privacidad de GETS. *</span></label>
+<label class="checkbox-label"><input id="marketing" type="checkbox"><span>Deseo recibir nuevas investigaciones y comunicaciones de GETS (opcional).</span></label>
+<button class="btn form-button" type="submit" id="submit"><span class="btn-icon">→</span> Quiero descargar el informe</button><div class="status" id="status" role="status" aria-live="polite"></div><p class="form-footnote">El formulario todavía no recibe datos ni habilita descargas. Se activará cuando esté lista la conexión segura y la política de privacidad.</p>
+</form></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a href="https://getseducacion.cl" aria-label="GETS Educación"><img src="assets/gets-logo-white.svg" alt="GETS"></a><span>Gestión en Educación, Tecnología y Sustentabilidad</span><a href="https://getseducacion.cl">Volver a GETS ↗</a></div></footer>
+<script>
 const CONFIG={apiUrl:"",privacyUrl:""};
-const status=document.getElementById("status"),form=document.getElementById("lead-form"),submit=document.getElementById("submit");
-const progress=document.getElementById("progress");
-let ticking=false;
-function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?Math.min(100,scrollY/max*100):0)+"%";ticking=false}
-window.addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimationFrame(updateProgress)}},{passive:true});updateProgress();
-const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-if(!reduceMotion&&"IntersectionObserver" in window){
- document.documentElement.classList.add("has-js");
- const observer=new IntersectionObserver((entries)=>{for(const e of entries){if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}}},{threshold:.11,rootMargin:"0px 0px -18px 0px"});
+const form=document.getElementById("lead-form"),status=document.getElementById("status"),submit=document.getElementById("submit"),progress=document.getElementById("scroll-progress"),line=document.getElementById("timeline-progress"),timeline=document.getElementById("timeline");
+const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!reduced&&"IntersectionObserver" in window){
+ document.documentElement.classList.add("enhanced");
+ const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}})},{threshold:.1,rootMargin:"0px 0px -18px 0px"});
  document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-}else document.querySelectorAll(".reveal").forEach(el=>el.classList.add("visible"));
-form.addEventListener("submit",async e=>{e.preventDefault();status.textContent="";
- if(!CONFIG.apiUrl||!CONFIG.privacyUrl){status.textContent="La descarga aún no está habilitada. Estamos completando el registro seguro.";return}
+}
+let ticking=false;
+function updateScroll(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?Math.max(0,Math.min(100,scrollY/max*100)):0)+"%";const bounds=timeline.getBoundingClientRect();const total=timeline.offsetHeight;const done=Math.max(0,Math.min(total,innerHeight*.55-bounds.top));line.style.height=done+"px";ticking=false}
+window.addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimationFrame(updateScroll)}},{passive:true});window.addEventListener("resize",updateScroll);updateScroll();
+form.addEventListener("submit",async event=>{event.preventDefault();status.textContent="";
+ if(!CONFIG.apiUrl||!CONFIG.privacyUrl){status.textContent="Estamos preparando la descarga. El registro aún no está habilitado.";return}
  if(!form.reportValidity())return;
  const data=Object.fromEntries(new FormData(form).entries());data.acepta_privacidad=document.getElementById("privacy").checked;data.acepta_marketing=document.getElementById("marketing").checked;data.recurso="policy-brief-matricula-2026";
  submit.disabled=true;
- try{const res=await fetch(CONFIG.apiUrl,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});if(!res.ok)throw Error("No pudimos registrar tus datos.");const out=await res.json();if(!out.downloadUrl||!/^https:\/\//.test(out.downloadUrl))throw Error("La descarga todavía no está disponible.");document.getElementById("pdf-link").href=out.downloadUrl;const m=document.getElementById("modal");m.classList.add("open");m.setAttribute("aria-hidden","false");form.reset()}
- catch(err){status.textContent=err.message||"No fue posible completar la solicitud."}finally{submit.disabled=false}
+ try{const response=await fetch(CONFIG.apiUrl,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});if(!response.ok)throw new Error("No fue posible registrar los datos.");const result=await response.json();if(!result.downloadUrl||!/^https:\/\//.test(result.downloadUrl))throw new Error("La descarga aún no está disponible.");window.open(result.downloadUrl,"_blank","noopener");form.reset()}catch(error){status.textContent=error.message||"No fue posible completar la solicitud."}finally{submit.disabled=false}
 });
-document.getElementById("close-modal").addEventListener("click",()=>{const m=document.getElementById("modal");m.classList.remove("open");m.setAttribute("aria-hidden","true")});
 </script></body></html>
