@@ -12,7 +12,7 @@
 :root{--blue:#2525EF;--yellow:#F2BC06;--mint:#6FDDAB;--orange:#FF4824;--ink:#1A1A1A;--ice:#F2F7FD;--content:1190px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+body{margin:0;font-family:"Mozaic HUM","Arial",Helvetica,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
 button,input{font:inherit}button{cursor:pointer}
 a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .container{width:min(var(--content),calc(100% - 72px));margin:auto}
@@ -157,14 +157,22 @@ html.enhanced .reveal.visible{opacity:1;transform:none}
 }
 @media(max-width:370px){.form-grid{grid-template-columns:1fr}.field.wide{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.enhanced .reveal{opacity:1;transform:none;transition:none}.btn{transition:none}}
+
+/* Official GETS font families can be activated once licensed font assets or Adobe Fonts Kit are provided.
+   Until then, the existing system fallback remains visible. */
+h1,h2,h3,.btn,.eyebrow,.nav-links,.logo-link span,.hero-sub{font-family:"Mozaic GEO",Arial,Helvetica,sans-serif}
+.cta-arrow{display:block;width:18px;height:18px;flex:0 0 18px;transition:transform .2s ease}
+.btn:hover .cta-arrow{transform:translateX(3px)}
+.btn{gap:12px}
+@media(prefers-reduced-motion:reduce){.cta-arrow{transition:none!important}}
 </style>
 </head>
 <body>
 <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
-<header class="site-nav"><div class="container nav-inner"><a class="logo-link" href="#inicio" aria-label="GETS Insights"><img src="assets/gets-logo.svg" alt="GETS"><span>INSIGHTS</span></a><nav class="nav-links" aria-label="Secciones"><a href="#contexto">Contexto</a><a href="#hallazgos">Hallazgos</a><a class="btn nav-cta" href="#descargar"><span class="btn-icon">→</span> Descargar estudio</a></nav></div></header>
+<header class="site-nav"><div class="container nav-inner"><a class="logo-link" href="#inicio" aria-label="GETS Insights"><img src="assets/gets-logo.svg" alt="GETS"><span>INSIGHTS</span></a><nav class="nav-links" aria-label="Secciones"><a href="#contexto">Contexto</a><a href="#hallazgos">Hallazgos</a><a class="btn nav-cta" href="#descargar"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Descargar estudio</a></nav></div></header>
 <main id="inicio">
 <section class="hero"><div class="container hero-grid">
-<div class="hero-copy"><span class="eyebrow">GETS INSIGHTS / OCTUBRE 2026</span><h1>La matrícula escolar está cambiando. <em>Tu institución necesita anticiparse.</em></h1><p class="hero-lede">Chile enfrenta una transformación demográfica que desafía la planificación, el financiamiento y la sostenibilidad de los establecimientos educativos.</p><a class="btn" href="#descargar"><span class="btn-icon">→</span> Descargar el estudio</a><p class="hero-sub">POLICY BRIEF · 21 PÁGINAS · ACCESO MEDIANTE REGISTRO</p></div>
+<div class="hero-copy"><span class="eyebrow">GETS INSIGHTS / OCTUBRE 2026</span><h1>La matrícula escolar está cambiando. <em>Tu institución necesita anticiparse.</em></h1><p class="hero-lede">Chile enfrenta una transformación demográfica que desafía la planificación, el financiamiento y la sostenibilidad de los establecimientos educativos.</p><a class="btn" href="#descargar"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Descargar el estudio</a><p class="hero-sub">POLICY BRIEF · 21 PÁGINAS · ACCESO MEDIANTE REGISTRO</p></div>
 <div class="hero-art"><img class="hero-photo" src="https://cdn.prod.website-files.com/69497ae5cce6ea143f858137/6967d89e731004e570c67fd7_Home_hero-foto.png" alt="Comunidad educativa en una actividad escolar"><div class="hero-note">INVESTIGACIÓN GETS · 2026</div></div></div></section>
 <section class="intro" id="contexto"><div class="container reveal"><div class="intro-ornament" aria-hidden="true"></div><h2>Lo que hoy parece una tendencia, mañana será una decisión crítica.</h2><p>Este Policy Brief analiza cómo la contracción de la matrícula escolar podría transformar el financiamiento, la organización y la sostenibilidad de los establecimientos en Chile.</p></div></section>
 <section class="journey" id="hallazgos"><div class="container">
@@ -175,7 +183,7 @@ html.enhanced .reveal.visible{opacity:1;transform:none}
 <article class="milestone"><div class="milestone-art reveal"><div class="shape blue"><b>2.491</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">03 / CAPACIDAD EDUCATIVA</span><h3>El desafío va mucho más allá de llenar salas.</h3><p>El estudio estima 2.491 establecimientos excedentes al 2035: una medida de capacidad, no una predicción de cierres.</p></div></article>
 <article class="milestone"><div class="milestone-art reveal"><div class="shape orange"><b>2035</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">04 / DECIDIR HOY</span><h3>Anticiparse puede marcar la diferencia.</h3><p>Para directores y sostenedores, comprender el contexto territorial y financiero es fundamental antes de tomar decisiones de largo plazo.</p></div></article>
 </div><p class="method-note">Fuente: Muñoz Pavez y Jiménez Acevedo, Policy Brief GETS, octubre de 2026. Proyecciones basadas en supuestos demográficos y de cobertura; cifras aproximadas y estimaciones, no resultados observados.</p></div></section>
-<section class="cta-wrap"><div class="container"><div class="cta-panel"><div class="cta-graphic" aria-hidden="true"><span></span><span></span><span></span></div><div class="cta-content reveal"><h2>No basta con reaccionar. <em>Necesitamos instituciones preparadas para liderar el cambio.</em></h2><a href="#descargar" class="btn"><span class="btn-icon">→</span> Acceder al informe</a></div></div></div></section>
+<section class="cta-wrap"><div class="container"><div class="cta-panel"><div class="cta-graphic" aria-hidden="true"><span></span><span></span><span></span></div><div class="cta-content reveal"><h2>No basta con reaccionar. <em>Necesitamos instituciones preparadas para liderar el cambio.</em></h2><a href="#descargar" class="btn"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Acceder al informe</a></div></div></div></section>
 <section class="download" id="descargar"><div class="container download-layout">
 <div class="download-copy reveal"><span class="eyebrow">POLICY BRIEF · GETS INSIGHTS</span><h2>Comprender el cambio es el primer paso para liderarlo.</h2><p>Descarga <strong>La contracción de la matrícula escolar en Chile</strong>, un estudio que reúne evidencia, escenarios y recomendaciones sobre el futuro del sistema escolar.</p><p>Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p><div class="download-meta">Informe de 21 páginas · Octubre de 2026</div></div>
 <div class="form-panel reveal"><h3>Descarga el Policy Brief</h3><p>Déjanos tus datos profesionales para acceder al estudio completo.</p>
@@ -189,7 +197,7 @@ html.enhanced .reveal.visible{opacity:1;transform:none}
 </div>
 <label class="checkbox-label"><input id="privacy" type="checkbox" required><span>Acepto el tratamiento de mis datos para gestionar la solicitud del informe, según la política de privacidad de GETS. *</span></label>
 <label class="checkbox-label"><input id="marketing" type="checkbox"><span>Deseo recibir nuevas investigaciones y comunicaciones de GETS (opcional).</span></label>
-<button class="btn form-button" type="submit" id="submit"><span class="btn-icon">→</span> Quiero descargar el informe</button><div class="status" id="status" role="status" aria-live="polite"></div><p class="form-footnote">El formulario todavía no recibe datos ni habilita descargas. Se activará cuando esté lista la conexión segura y la política de privacidad.</p>
+<button class="btn form-button" type="submit" id="submit"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Quiero descargar el informe</button><div class="status" id="status" role="status" aria-live="polite"></div><p class="form-footnote">El formulario todavía no recibe datos ni habilita descargas. Se activará cuando esté lista la conexión segura y la política de privacidad.</p>
 </form></div></div></section>
 </main>
 <footer class="footer"><div class="container footer-inner"><a href="https://getseducacion.cl" aria-label="GETS Educación"><img src="assets/gets-logo-white.svg" alt="GETS"></a><span>Gestión en Educación, Tecnología y Sustentabilidad</span><a href="https://getseducacion.cl">Volver a GETS ↗</a></div></footer>
