@@ -201,7 +201,28 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 .hero-art:after{display:none}
 .hero-note{bottom:12px;left:14px}
 }
-.footer-inner{min-height:44px;gap:24px}.footer-tagline{font-size:12px}.footer-social{display:flex;align-items:center;gap:22px;font-size:12px}.footer-social>span{opacity:.72}.footer-social a{display:inline-flex;align-items:center;gap:5px;font-weight:600;transition:opacity .2s}.footer-social a:hover{opacity:.7}.footer-social svg{width:15px;height:15px}@media(max-width:680px){.footer-inner{flex-direction:column;align-items:flex-start;gap:14px}.footer-social{gap:14px;flex-wrap:wrap}.footer-tagline{font-size:11px}}</style>
+.footer-inner{min-height:44px;gap:24px}.footer-tagline{font-size:12px}.footer-social{display:flex;align-items:center;gap:22px;font-size:12px}.footer-social>span{opacity:.72}.footer-social a{display:inline-flex;align-items:center;gap:5px;font-weight:600;transition:opacity .2s}.footer-social a:hover{opacity:.7}.footer-social svg{width:15px;height:15px}@media(max-width:680px){.footer-inner{flex-direction:column;align-items:flex-start;gap:14px}.footer-social{gap:14px;flex-wrap:wrap}.footer-tagline{font-size:11px}}
+/* GETS footer: editorial, useful navigation, restrained hierarchy */
+.footer{position:relative;background:#1A1A1A;color:white;padding:0;overflow:hidden}
+.footer:before{content:"";display:block;height:5px;background:var(--blue)}
+.footer-top{display:grid;grid-template-columns:1.25fr 1fr;gap:12%;padding-top:65px;padding-bottom:65px;align-items:start}
+.footer-identity{min-width:0}
+.footer-kicker,.footer-col-title{font-size:10px;letter-spacing:.13em;color:#b2b2b2;font-weight:700}
+.footer-headline{font-family:"Mozaic GEO",Arial,Helvetica,sans-serif;font-size:clamp(26px,2.7vw,37px);line-height:1.15;letter-spacing:-.035em;font-weight:700;margin:20px 0 24px}
+.footer-headline span{color:var(--mint)}
+.footer-tagline{display:block;font-size:12px;line-height:1.5;color:#c4c4c4}
+.footer-directory{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.footer-col{display:flex;flex-direction:column;align-items:stretch;gap:16px}
+.footer-col-title{margin-bottom:8px}
+.footer-col a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:13px;border-bottom:1px solid #ffffff30;font-size:14px;font-weight:600;transition:color .2s,border-color .2s}
+.footer-col a span{font-size:15px;font-weight:400;color:#d5d5d5}
+.footer-col a:hover{color:var(--mint);border-color:var(--mint)}
+.footer-bottom{border-top:1px solid #ffffff30;min-height:65px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;color:#bdbdbd}
+.footer-bottom a:hover{color:#fff}
+@media(max-width:900px){.footer-top{gap:7%}.footer-directory{gap:24px}}
+@media(max-width:680px){.footer-top{grid-template-columns:1fr;gap:38px;padding-top:48px;padding-bottom:42px}.footer-headline{font-size:30px}.footer-directory{gap:20px}.footer-col a{font-size:13px}.footer-bottom{min-height:60px;font-size:10px}}
+@media(max-width:370px){.footer-directory{grid-template-columns:1fr;gap:30px}}
+</style>
 </head>
 <body>
 <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
@@ -236,7 +257,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 <button class="btn form-button" type="submit" id="submit"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Quiero descargar el informe</button><div class="status" id="status" role="status" aria-live="polite"></div><p class="form-footnote">El formulario todavía no recibe datos ni habilita descargas. Se activará cuando esté lista la conexión segura y la política de privacidad.</p>
 </form></div></div></section>
 </main>
-<footer class="footer"><div class="container footer-inner"><span class="footer-tagline">Gestión en Educación, Tecnología y Sustentabilidad</span><div class="footer-social"><span>Síguenos en:</span><a href="https://www.instagram.com/getseducacion/" target="_blank" rel="noopener noreferrer" aria-label="GETS Educación en Instagram">Instagram <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://www.linkedin.com/company/getseducacion" target="_blank" rel="noopener noreferrer" aria-label="GETS Educación en LinkedIn">LinkedIn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></footer>
+<footer class="footer"><div class="container footer-top"><div class="footer-identity"><span class="footer-kicker">GETS EDUCACIÓN</span><p class="footer-headline">Transformamos la educación.<br><span>Construimos lo que viene.</span></p><span class="footer-tagline">Gestión en Educación, Tecnología y Sustentabilidad</span></div><div class="footer-directory"><div class="footer-col"><span class="footer-col-title">EXPLORA GETS</span><a href="https://www.getseducacion.cl/servicios">Servicios <span aria-hidden="true">↗</span></a><a href="https://www.getseducacion.cl/equipo">Equipo <span aria-hidden="true">↗</span></a><a href="https://www.getseducacion.cl/metodologia">Metodología <span aria-hidden="true">↗</span></a></div><div class="footer-col"><span class="footer-col-title">SÍGUENOS</span><a href="https://www.instagram.com/getseducacion/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/company/getseducacion" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div><div class="container footer-bottom"><span>© 2026 GETS Educación</span><a href="https://www.getseducacion.cl/">getseducacion.cl <span aria-hidden="true">↗</span></a></div></footer>
 <script>
 const CONFIG={apiUrl:"",privacyUrl:""};
 const form=document.getElementById("lead-form"),status=document.getElementById("status"),submit=document.getElementById("submit"),progress=document.getElementById("scroll-progress"),line=document.getElementById("timeline-progress"),timeline=document.getElementById("timeline");
