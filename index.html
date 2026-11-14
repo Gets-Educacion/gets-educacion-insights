@@ -24,7 +24,109 @@ footer{background:var(--blue);color:#fff;border-top:1px solid #ffffff59}.footer-
 @media(max-width:800px){.desktop-nav{display:none}.menu-button{display:block}.desktop-nav.open{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:stretch;background:#fff;padding:20px 26px;border-bottom:1px solid #ddd;gap:18px}.hero-content{grid-template-columns:1fr}.hero-copy{padding:74px 0 62px}.hero-photo{height:310px;margin:0 -26px;min-height:310px}.hero-photo:after{display:none}.hero-photo img{object-position:center 36%}.section{padding:75px 0}.section-header,.questions-layout,.report-layout,.download-grid{grid-template-columns:1fr;gap:38px}.section-header h2{margin-bottom:0}.section-description{max-width:650px}.facts{margin-top:44px}.fact{grid-template-columns:30% 1fr 22px;gap:18px}.report-cover{max-width:520px;min-height:530px}.form-wrap{border-left:0;border-top:1px solid #ffffff69;padding:35px 0 0}.download-copy{padding:0}.download-copy .brand-large{display:none}.quote-inner{grid-template-columns:1fr;padding:65px 0;gap:25px}.quote-inner:after{right:-30px}.strap-inner{flex-wrap:wrap;padding:16px 0;min-height:0}}
 @media(max-width:500px){.container{width:calc(100% - 36px)}.header-inner{height:65px}.brand-word{font-size:23px}.brand-suffix{font-size:9px;margin-left:8px;padding-left:9px}.desktop-nav.open{top:65px}.hero-copy{padding:56px 0 49px}.hero h1{font-size:48px}.hero-lede{font-size:16px}.hero-photo{margin:0 -18px;height:240px;min-height:240px}.hero-meta{font-size:10px}.section{padding:70px 0}.section-header h2,.section-title{font-size:41px}.facts{margin-top:35px}.fact{grid-template-columns:1fr 18px;gap:11px;padding:24px 0}.fact-number{grid-column:1/-1;font-size:62px}.fact-body h3{font-size:23px}.fact-arrow{grid-column:2;grid-row:2}.question-mark{font-size:88px}.question-item strong{font-size:17px}.report-cover{min-height:455px;padding:28px}.cover-title{font-size:44px}.quote-inner{padding:54px 0}.quote-inner h2{font-size:35px}.download{padding:72px 0 48px}.download-copy h2{font-size:45px}.footer-inner{flex-wrap:wrap;padding:22px 0;gap:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-.logo-image{display:block;width:108px;height:auto}.cover-logo{width:112px;height:auto;display:block}.download-logo{width:200px;height:auto;display:block}.footer-logo{width:110px;height:auto;display:block}@media(max-width:500px){.logo-image{width:90px}.brand-suffix{font-size:9px}} </style>
+.logo-image{display:block;width:108px;height:auto}.cover-logo{width:112px;height:auto;display:block}.download-logo{width:200px;height:auto;display:block}.footer-logo{width:110px;height:auto;display:block}@media(max-width:500px){.logo-image{width:90px}.brand-suffix{font-size:9px}} 
+/* Brand-led editorial refresh — live GETS home photo and official color system */
+body{background:#fff}
+.site-header{background:rgba(255,255,255,.98);border-bottom:1px solid #e4e4e4}
+.header-inner{height:83px}
+.container{width:min(1320px,calc(100% - 100px))}
+.hero{background:#fff;color:var(--black)}
+.hero-content{grid-template-columns:minmax(0,56%) minmax(0,44%);min-height:690px}
+.hero-copy{padding:90px 7% 86px 0;position:relative}
+.hero-copy:before{content:"";position:absolute;width:170px;height:4px;background:var(--blue);top:45px;left:0}
+.hero h1{font-size:clamp(57px,5.75vw,90px);line-height:1.045;font-weight:800;max-width:780px;margin:20px 0 24px;letter-spacing:-.065em}
+.hero h1 span{color:var(--blue)}
+.hero-lede{max-width:540px;font-size:18px;line-height:1.5}
+.hero .mini-label{color:var(--blue)}
+.hero-photo{min-height:690px;margin-right:calc((min(100vw,1320px) - 100vw)/2);background:var(--ice)}
+.hero-photo img{object-fit:cover;object-position:center}
+.hero-photo:after{display:none}
+.hero-photo .photo-tag{font-size:10px;background:var(--mint);color:var(--black);bottom:24px;right:24px;letter-spacing:.08em}
+.hero-meta{color:#5a5a5a;max-width:450px;line-height:1.5}
+.strap{background:var(--blue);color:#fff;border:0}
+.strap-inner{min-height:82px}
+.strap p{font-size:12px;letter-spacing:.015em}
+.strap p span{color:var(--mint)}
+.strap small{color:#e3e3ff}
+#hallazgos{padding:118px 0 125px}
+#hallazgos .section-header{grid-template-columns:1.1fr .9fr}
+#hallazgos .section-header h2{font-size:clamp(47px,5.1vw,76px);line-height:1.03}
+#hallazgos .section-header h2 em{color:var(--blue)}
+.facts{margin-top:85px}
+.fact{grid-template-columns:31% 1fr 35px;padding:40px 0;gap:40px}
+.fact-number{font-size:clamp(70px,7.5vw,112px)}
+.fact-body h3{font-size:clamp(24px,2.6vw,38px);max-width:750px}
+.fact-body p{max-width:700px;font-size:16px}
+.question-section{background:var(--blue);color:#fff}
+.question-mark{font-size:125px;color:var(--mint)}
+.question-side p{color:#f0efff}
+.question-item{border-top-color:#ffffff6b;padding:29px 0}
+.question-item:last-child{border-bottom-color:#ffffff6b}
+.question-item span{color:var(--mint)}
+.question-item strong{font-size:21px}
+.report{padding-top:130px;padding-bottom:145px}
+.report-layout{gap:12%;grid-template-columns:42% 1fr}
+.report-cover{box-shadow:24px 24px 0 var(--mint);min-height:640px}
+.report-copy .section-title{font-size:clamp(42px,4.3vw,66px)}
+.report-copy p{font-size:17px}
+.report-copy .primary-cta:hover,.primary-cta:hover{background:var(--blue)}
+.quote-banner{background:var(--mint);color:var(--black)}
+.quote-inner h2 span{color:var(--blue)}
+.quote-inner .primary-cta{background:var(--black);color:#fff}
+.quote-inner:after{background:var(--blue);width:115px;height:115px;top:-60px;right:12%;transform:rotate(45deg)}
+.download{padding:120px 0 100px}
+.download-copy h2{font-size:clamp(47px,4.8vw,74px)}
+.form-wrap{border-left:1px solid #ffffff66}
+.form-wrap h3{font-size:30px}
+.field input{background:#ffffff0a}
+.field input:focus{background:#ffffff15}
+.footer-inner{min-height:105px}
+@media(max-width:1100px){
+.container{width:calc(100% - 64px)}
+.hero-content{grid-template-columns:57% 43%}
+.hero-photo{margin-right:-32px}
+.hero h1{font-size:clamp(52px,5.8vw,75px)}
+}
+@media(max-width:800px){
+.container{width:calc(100% - 44px)}
+.hero-content{grid-template-columns:1fr;min-height:0}
+.hero-copy{padding:95px 0 70px}
+.hero-copy:before{top:47px}
+.hero h1{max-width:660px;font-size:clamp(48px,7.5vw,70px)}
+.hero-photo{margin:0 -22px;min-height:400px;height:400px}
+#hallazgos{padding:90px 0}
+#hallazgos .section-header{grid-template-columns:1fr}
+.facts{margin-top:50px}
+.fact{grid-template-columns:29% 1fr 22px;gap:17px}
+.fact-number{font-size:clamp(48px,6.8vw,80px)}
+.report{padding:90px 0 110px}
+.report-layout{grid-template-columns:1fr}
+.report-cover{max-width:560px}
+.form-wrap{border-left:0}
+.download{padding:90px 0}
+}
+@media(max-width:500px){
+.container{width:calc(100% - 36px)}
+.header-inner{height:66px}
+.hero-copy{padding:72px 0 52px}
+.hero-copy:before{top:30px;width:95px}
+.hero h1{font-size:48px;line-height:1.02}
+.hero-lede{font-size:16px}
+.hero-photo{height:285px;min-height:285px;margin:0 -18px}
+.strap-inner{min-height:80px}
+#hallazgos{padding:76px 0}
+#hallazgos .section-header h2{font-size:44px}
+.fact{grid-template-columns:1fr 20px;padding:29px 0}
+.fact-number{font-size:65px}
+.fact-body h3{font-size:24px}
+.question-section{padding:75px 0}
+.question-item strong{font-size:18px}
+.report-cover{min-height:490px}
+.report-copy .section-title{font-size:44px}
+.quote-inner h2{font-size:35px}
+.download-copy h2{font-size:47px}
+}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="container header-inner">
@@ -32,15 +134,15 @@ footer{background:var(--blue);color:#fff;border-top:1px solid #ffffff59}.footer-
 <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav" id="menu-toggle">☰</button>
 <nav id="nav" class="desktop-nav" aria-label="Navegación principal"><a href="#hallazgos">El escenario</a><a href="#preguntas">Los desafíos</a><a href="#informe">El estudio</a><a href="#descargar" class="nav-pill">Descargar informe ↗</a></nav></div></header>
 <main id="inicio">
-<section class="hero" aria-labelledby="hero-heading"><div class="container hero-content"><div class="hero-copy"><div class="mini-label eyebrow">GETS INSIGHTS · POLICY BRIEF 2026</div><h1 id="hero-heading">Menos estudiantes. <span>Decisiones más grandes.</span></h1><p class="hero-lede">La matrícula escolar en Chile está cambiando. El desafío ya no es esperar: es prepararse para lo que viene.</p><a class="primary-cta" href="#informe">Conoce el estudio <span aria-hidden="true">↗</span></a><div class="hero-meta">LA CONTRACCIÓN DE LA MATRÍCULA ESCOLAR EN CHILE · OCTUBRE 2026</div></div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=85" alt="Docente y estudiantes trabajando en un entorno educativo"><span class="photo-tag">EDUCACIÓN · DATOS · FUTURO</span></div></div></section>
+<section class="hero" aria-labelledby="hero-heading"><div class="container hero-content"><div class="hero-copy"><div class="mini-label eyebrow">GETS INSIGHTS · POLICY BRIEF 2026</div><h1 id="hero-heading">Tu escuela enfrenta un futuro distinto. <span>Es momento de anticiparse.</span></h1><p class="hero-lede">La matrícula escolar está cambiando en Chile. Descubre qué significa para tu establecimiento y qué decisiones puedes empezar a tomar hoy.</p><a class="primary-cta" href="#informe">Conoce el estudio <span aria-hidden="true">↗</span></a><div class="hero-meta">LA CONTRACCIÓN DE LA MATRÍCULA ESCOLAR EN CHILE · OCTUBRE 2026</div></div><div class="hero-photo"><img src="https://cdn.prod.website-files.com/69497ae5cce6ea143f858137/6967d89e731004e570c67fd7_Home_hero-foto.png" alt="Docente y estudiantes trabajando en un entorno educativo"><span class="photo-tag">POLICY BRIEF · 2026</span></div></div></section>
 <div class="strap"><div class="container strap-inner"><p><span>GETS INSIGHTS</span> / CONOCIMIENTO PARA TOMAR MEJORES DECISIONES</p><small>Una mirada al futuro de la educación chilena</small></div></div>
-<section id="hallazgos" class="section"><div class="container"><div class="section-header"><div><div class="mini-label eyebrow" style="color:var(--blue)">EL ESCENARIO QUE VIENE</div><h2>La matrícula está bajando. <em>El impacto recién comienza.</em></h2></div><p class="section-description">Chile está entrando en una nueva etapa demográfica. Los establecimientos deberán responder a una realidad con menos estudiantes, nuevas presiones financieras y mayores desafíos de planificación.</p></div>
+<section id="hallazgos" class="section"><div class="container"><div class="section-header"><div><div class="mini-label eyebrow" style="color:var(--blue)">EL ESCENARIO QUE VIENE</div><h2>Menos matrícula. <em>Más decisiones por tomar.</em></h2></div><p class="section-description">No hablamos solo de números. Hablamos de presupuestos, proyectos educativos y comunidades que deberán adaptarse a una realidad diferente.</p></div>
 <div class="facts"><article class="fact"><div class="fact-number">~29%</div><div class="fact-body"><h3>Menos matrícula proyectada hacia 2035.</h3><p>En los niveles regulares, la reducción estimada ronda el 29%. No es un cambio puntual: las proyecciones muestran una contracción estructural.</p></div><span class="fact-arrow" aria-hidden="true">↗</span></article><article class="fact"><div class="fact-number">~1M</div><div class="fact-body"><h3>Un millón menos de estudiantes. Un sistema que debe adaptarse.</h3><p>La disminución aproximada proyectada obliga a anticipar decisiones sobre sostenibilidad, oferta educativa y recursos.</p></div><span class="fact-arrow" aria-hidden="true">↗</span></article><article class="fact"><div class="fact-number">2.491</div><div class="fact-body"><h3>La capacidad escolar también está en juego.</h3><p>El estudio estima establecimientos excedentes respecto de la matrícula proyectada. Es una medida de capacidad, no una predicción de cierres.</p></div><span class="fact-arrow" aria-hidden="true">↗</span></article></div>
 <p class="method-note">Fuente: Muñoz Pavez y Jiménez Acevedo, GETS, octubre de 2026. Proyecciones al 2035 bajo supuestos demográficos y educativos. Cifras redondeadas donde se indica.</p></div></section>
-<section id="preguntas" class="section question-section"><div class="container questions-layout"><div class="question-side"><div class="question-mark" aria-hidden="true">?</div><h2 class="section-title">El desafío no es solo entender el cambio. Es saber qué hacer.</h2><p>Estas son algunas de las decisiones que empiezan a definir el futuro de las comunidades educativas.</p></div><div class="question-list"><div class="question-item"><span>01</span><strong>¿Cómo sostener un proyecto educativo cuando disminuyen los ingresos por matrícula?</strong></div><div class="question-item"><span>02</span><strong>¿Qué pasará con la demanda escolar en los distintos territorios?</strong></div><div class="question-item"><span>03</span><strong>¿Cómo planificar infraestructura, dotaciones y recursos sin improvisar?</strong></div><div class="question-item"><span>04</span><strong>¿Cómo convertir este escenario en una oportunidad para mejorar la calidad?</strong></div></div></div></section>
-<section id="informe" class="section report"><div class="container report-layout"><div class="report-cover" role="img" aria-label="Representación gráfica de la portada del Policy Brief sobre la contracción de la matrícula escolar en Chile"><div class="cover-top"><img class="cover-logo" src="assets/gets-logo-white.svg" alt="GETS"><span>OCTUBRE · 2026</span></div><div class="confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="cover-title">La contracción de la matrícula escolar en Chile.</div><div class="cover-small">Efectos fiscales, territoriales e institucionales de la transición demográfica.<p>GETS / POLICY BRIEF</p></div></div><div class="report-copy"><div class="mini-label eyebrow">UN ESTUDIO PARA MIRAR MÁS ALLÁ</div><h2 class="section-title">El futuro de la educación no se improvisa.</h2><p>¿Qué implica la transición demográfica para los establecimientos? Este Policy Brief reúne evidencia, proyecciones y recomendaciones para comprender el escenario y actuar con anticipación.</p><p>Un análisis de matrícula, financiamiento, capacidad escolar y experiencias internacionales en 21 páginas.</p><a class="primary-cta" href="#descargar">Quiero leer el informe <span aria-hidden="true">↗</span></a><p class="byline">Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p></div></div></section>
+<section id="preguntas" class="section question-section"><div class="container questions-layout"><div class="question-side"><div class="question-mark" aria-hidden="true">?</div><h2 class="section-title">El futuro no espera. La gestión tampoco.</h2><p>Cuatro preguntas que ningún equipo directivo debería dejar para después.</p></div><div class="question-list"><div class="question-item"><span>01</span><strong>¿Cómo sostener un proyecto educativo cuando disminuyen los ingresos por matrícula?</strong></div><div class="question-item"><span>02</span><strong>¿Qué pasará con la demanda escolar en los distintos territorios?</strong></div><div class="question-item"><span>03</span><strong>¿Cómo planificar infraestructura, dotaciones y recursos sin improvisar?</strong></div><div class="question-item"><span>04</span><strong>¿Cómo convertir este escenario en una oportunidad para mejorar la calidad?</strong></div></div></div></section>
+<section id="informe" class="section report"><div class="container report-layout"><div class="report-cover" role="img" aria-label="Representación gráfica de la portada del Policy Brief sobre la contracción de la matrícula escolar en Chile"><div class="cover-top"><img class="cover-logo" src="assets/gets-logo-white.svg" alt="GETS"><span>OCTUBRE · 2026</span></div><div class="confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="cover-title">La contracción de la matrícula escolar en Chile.</div><div class="cover-small">Efectos fiscales, territoriales e institucionales de la transición demográfica.<p>GETS / POLICY BRIEF</p></div></div><div class="report-copy"><div class="mini-label eyebrow">UN ESTUDIO PARA MIRAR MÁS ALLÁ</div><h2 class="section-title">Comprender el cambio es el primer paso para liderarlo.</h2><p>¿Qué implica la transición demográfica para los establecimientos? Este Policy Brief reúne evidencia, proyecciones y recomendaciones para comprender el escenario y actuar con anticipación.</p><p>Un análisis de matrícula, financiamiento, capacidad escolar y experiencias internacionales en 21 páginas.</p><a class="primary-cta" href="#descargar">Quiero leer el informe <span aria-hidden="true">↗</span></a><p class="byline">Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p></div></div></section>
 <section class="quote-banner"><div class="container quote-inner"><h2>Las decisiones que tomemos hoy pueden definir <span>la educación de mañana.</span></h2><a class="primary-cta" href="#descargar">Accede al estudio ↗</a></div></section>
-<section id="descargar" class="download"><div class="container download-grid"><div class="download-copy"><div class="mini-label eyebrow">CONVERSEMOS · GETS INSIGHTS</div><h2>Las grandes decisiones comienzan con buena información.</h2><p>Accede al Policy Brief completo y conoce los hallazgos que deberían estar sobre la mesa de quienes lideran establecimientos educativos en Chile.</p><p style="font-size:12px;opacity:.88">Policy Brief: La contracción de la matrícula escolar en Chile. Octubre de 2026 · 21 páginas.</p><div class="brand-large"><img class="download-logo" src="assets/gets-logo-white.svg" alt="GETS"></div></div>
+<section id="descargar" class="download"><div class="container download-grid"><div class="download-copy"><div class="mini-label eyebrow">CONVERSEMOS · GETS INSIGHTS</div><h2>El futuro de tu escuela merece decisiones informadas.</h2><p>Una investigación que pone sobre la mesa los datos, desafíos y oportunidades de la próxima década. Descarga el estudio completo.</p><p style="font-size:12px;opacity:.88">Policy Brief: La contracción de la matrícula escolar en Chile. Octubre de 2026 · 21 páginas.</p><div class="brand-large"><img class="download-logo" src="assets/gets-logo-white.svg" alt="GETS"></div></div>
 <div class="form-wrap"><h3>Obtén el informe completo.</h3><p>Completa tus datos profesionales para acceder al documento.</p>
 <form id="lead-form" novalidate><div class="field"><label for="nombre">Nombre completo *</label><input id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" maxlength="120" required></div>
 <div class="field"><label for="cargo">Cargo *</label><input id="cargo" name="cargo" placeholder="Director/a, sostenedor/a, equipo directivo..." maxlength="120" required></div>
