@@ -335,7 +335,23 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 /* Balance the shorter hero headline vertically without moving the artwork */
 @media(min-width:681px){.hero-copy{position:relative;top:42px}}
 @media(max-width:680px){.hero-copy{padding-top:82px;padding-bottom:30px}}
-.footer-bottom-links{display:flex;align-items:center;gap:26px;flex-wrap:wrap}.footer-bottom-links a:last-child{opacity:.72}.footer-bottom-links a:last-child:hover{opacity:1}@media(max-width:680px){.footer-bottom{align-items:flex-start;flex-wrap:wrap;row-gap:8px;padding:16px 0}.footer-bottom-links{gap:9px 18px}}</style>
+.footer-bottom-links{display:flex;align-items:center;gap:26px;flex-wrap:wrap}.footer-bottom-links a:last-child{opacity:.72}.footer-bottom-links a:last-child:hover{opacity:1}@media(max-width:680px){.footer-bottom{align-items:flex-start;flex-wrap:wrap;row-gap:8px;padding:16px 0}.footer-bottom-links{gap:9px 18px}}
+/* GETS in the media: editorial 24 Horas mention */
+.press-feature{padding:38px 0 82px;background:#fff}
+.press-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,6.5vw,100px);align-items:center}
+.press-image-link{display:block;position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--ice);border-radius:10px}
+.press-image-link img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.press-image-link:hover img{transform:scale(1.035)}
+.press-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:60px;width:60px;border-radius:50%;background:#111;color:white;display:grid;place-items:center;box-shadow:0 6px 24px #0004;transition:background .2s,transform .2s}
+.press-play svg{height:25px;width:25px;margin-left:3px}
+.press-image-link:hover .press-play{background:var(--blue);transform:translate(-50%,-50%) scale(1.06)}
+.press-copy .eyebrow{color:var(--blue);margin-bottom:17px}
+.press-copy h2{font-family:"Mozaic GEO",Arial,sans-serif;font-size:clamp(30px,3vw,43px);line-height:1.16;letter-spacing:-.04em;margin:0 0 20px}
+.press-copy p{font-size:16px;line-height:1.62;margin:0 0 28px;max-width:520px}
+.press-btn{font-family:"Mozaic HUM",Arial,sans-serif}
+@media(max-width:680px){.press-feature{padding:26px 0 68px}.press-layout{grid-template-columns:1fr;gap:28px}.press-image-link{aspect-ratio:16/10}.press-copy h2{font-size:clamp(29px,7.5vw,36px)}.press-copy p{font-size:14px}.press-play{height:52px;width:52px}}
+@media(prefers-reduced-motion:reduce){.press-image-link img,.press-play{transition:none}.press-image-link:hover img{transform:none}}
+</style>
 </head>
 <body>
 <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
@@ -353,6 +369,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 <article class="milestone"><div class="milestone-art reveal"><div class="shape blue"><b>2.491</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">03 / CAPACIDAD EDUCATIVA</span><h3>El desafío va mucho más allá de llenar salas.</h3><p>El estudio estima 2.491 establecimientos excedentes al 2035: una medida de capacidad, no una predicción de cierres.</p></div></article>
 <article class="milestone"><div class="milestone-art reveal"><div class="shape orange"><b>2035</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">04 / DECIDIR HOY</span><h3>Anticiparse puede marcar la diferencia.</h3><p>Para directores y sostenedores, comprender el contexto territorial y financiero es fundamental antes de tomar decisiones de largo plazo.</p></div></article>
 </div><p class="method-note">Fuente: Muñoz Pavez y Jiménez Acevedo, Policy Brief GETS, octubre de 2026. Proyecciones basadas en supuestos demográficos y de cobertura; cifras aproximadas y estimaciones, no resultados observados.</p></div></section>
+<section class="press-feature" aria-labelledby="press-title"><div class="container press-layout"><a class="press-image-link reveal" href="https://www.youtube.com/watch?v=ujlu4Zin5uU" target="_blank" rel="noopener noreferrer" aria-label="Ver entrevista de GETS en 24 Horas, YouTube"><img src="assets/prensa.jpg" alt="Participación de GETS en 24 Horas para conversar sobre los desafíos de la matrícula escolar" loading="lazy"><span class="press-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m9 6 9 6-9 6V6Z" fill="currentColor"/></svg></span></a><div class="press-copy reveal"><span class="eyebrow">GETS EN LOS MEDIOS · 24 HORAS</span><h2>El futuro de la matrícula escolar también está en la conversación pública.</h2><p>Estuvimos en <strong>24 Horas</strong> conversando sobre la disminución proyectada de la matrícula escolar en Chile y los desafíos que plantea para las comunidades educativas.</p><a class="btn press-btn" href="https://www.youtube.com/watch?v=ujlu4Zin5uU" target="_blank" rel="noopener noreferrer"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Ver la entrevista</a></div></div></section>
 <section class="cta-wrap"><div class="container"><div class="cta-panel"><div class="cta-graphic" aria-hidden="true"><span></span><span></span><span></span></div><div class="cta-content reveal"><h2>No basta con reaccionar. <em>Necesitamos instituciones preparadas para liderar el cambio.</em></h2><a href="#descargar" class="btn"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Acceder al informe</a></div></div></div></section>
 <section class="download" id="descargar"><div class="container download-layout">
 <div class="download-copy reveal"><span class="eyebrow">POLICY BRIEF · GETS INSIGHTS</span><h2>Comprender el cambio es el primer paso para liderarlo.</h2><p>Descarga <strong>La contracción de la matrícula escolar en Chile</strong>, un estudio que reúne evidencia, escenarios y recomendaciones sobre el futuro del sistema escolar.</p><p>Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p><div class="download-meta">Informe de 21 páginas · Octubre de 2026</div></div>
