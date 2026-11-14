@@ -252,6 +252,17 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 .hero-photo{clip-path:none!important;transform:scale(1.25);transform-origin:85% 50%;object-fit:cover}
 .hero-note{left:15%;bottom:12px}
 }
+
+/* Confirmation popup, only opened after a successful API registration */
+.download-overlay{position:fixed;inset:0;z-index:150;background:rgba(11,11,24,.7);display:none;align-items:center;justify-content:center;padding:20px}
+.download-overlay.is-open{display:flex}
+.download-dialog{background:#fff;color:var(--ink);width:min(450px,100%);position:relative;border-radius:9px;padding:36px;box-shadow:0 24px 80px #0005;text-align:center}
+.download-close{position:absolute;top:10px;right:13px;background:none;border:0;font-size:25px;color:#555;padding:5px 10px}
+.download-check{display:grid;place-items:center;background:var(--mint);border-radius:50%;width:55px;height:55px;font-size:27px;font-weight:800;margin:5px auto 22px}
+.download-dialog h2{font-family:"Mozaic GEO",Arial,Helvetica,sans-serif;font-size:28px;line-height:1.2;margin:0 0 12px;letter-spacing:-.025em}
+.download-dialog p{font-size:14px;line-height:1.5;margin:0 0 25px;color:#555}
+.download-dialog .btn{width:100%}
+@media(max-width:680px){.download-dialog{padding:30px 24px}.download-dialog h2{font-size:24px}}
 </style>
 </head>
 <body>
@@ -288,6 +299,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 </form></div></div></section>
 </main>
 <footer class="footer"><div class="container footer-top"><div class="footer-identity"><span class="footer-kicker">GETS EDUCACIÓN</span><p class="footer-headline">Si tu escuela está<br>enfrentando desafíos,<br><span>podemos trabajar contigo.</span></p><span class="footer-tagline">Gestión en Educación, Tecnología y Sustentabilidad</span></div><div class="footer-directory"><div class="footer-col"><span class="footer-col-title">EXPLORA GETS</span><a href="https://www.getseducacion.cl/servicios">Servicios <svg class="footer-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://www.getseducacion.cl/equipo">Equipo <svg class="footer-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://www.getseducacion.cl/metodologia">Metodología <svg class="footer-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><div class="footer-col"><span class="footer-col-title">SÍGUENOS</span><a href="https://www.instagram.com/getseducacion/" target="_blank" rel="noopener noreferrer">Instagram <svg class="footer-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="https://www.linkedin.com/company/getseducacion" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="footer-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></div><div class="container footer-bottom"><span>© 2026 GETS Educación</span><a href="https://www.getseducacion.cl/">getseducacion.cl</a></div></footer>
+<div class="download-overlay" id="download-overlay" role="dialog" aria-modal="true" aria-labelledby="download-title" aria-hidden="true"><div class="download-dialog"><button class="download-close" id="download-close" type="button" aria-label="Cerrar">×</button><div class="download-check" aria-hidden="true">✓</div><h2 id="download-title">¡Tu informe está listo!</h2><p>Gracias por registrarte. Ya puedes descargar el Policy Brief de GETS.</p><a id="download-pdf" class="btn" href="#" target="_blank" rel="noopener noreferrer">Descargar PDF ↓</a></div></div>
 <script>
 const CONFIG={apiUrl:"",privacyUrl:""};
 const form=document.getElementById("lead-form"),status=document.getElementById("status"),submit=document.getElementById("submit"),progress=document.getElementById("scroll-progress"),line=document.getElementById("timeline-progress"),timeline=document.getElementById("timeline");
@@ -305,6 +317,11 @@ form.addEventListener("submit",async event=>{event.preventDefault();status.textC
  if(!form.reportValidity())return;
  const data=Object.fromEntries(new FormData(form).entries());data.acepta_privacidad=document.getElementById("privacy").checked;data.acepta_marketing=document.getElementById("marketing").checked;data.recurso="policy-brief-matricula-2026";
  submit.disabled=true;
- try{const response=await fetch(CONFIG.apiUrl,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});if(!response.ok)throw new Error("No fue posible registrar los datos.");const result=await response.json();if(!result.downloadUrl||!/^https:\/\//.test(result.downloadUrl))throw new Error("La descarga aún no está disponible.");window.open(result.downloadUrl,"_blank","noopener");form.reset()}catch(error){status.textContent=error.message||"No fue posible completar la solicitud."}finally{submit.disabled=false}
+ try{const response=await fetch(CONFIG.apiUrl,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});if(!response.ok)throw new Error("No fue posible registrar los datos.");const result=await response.json();if(!result.downloadUrl||!/^https:\/\//.test(result.downloadUrl))throw new Error("La descarga aún no está disponible.");document.getElementById("download-pdf").href=result.downloadUrl;const overlay=document.getElementById("download-overlay");overlay.classList.add("is-open");overlay.setAttribute("aria-hidden","false");document.getElementById("download-close").focus();form.reset()}catch(error){status.textContent=error.message||"No fue posible completar la solicitud."}finally{submit.disabled=false}
 });
+
+function closeDownloadDialog(){const el=document.getElementById("download-overlay");el.classList.remove("is-open");el.setAttribute("aria-hidden","true");}
+document.getElementById("download-close").addEventListener("click",closeDownloadDialog);
+document.getElementById("download-overlay").addEventListener("click",e=>{if(e.target.id==="download-overlay")closeDownloadDialog()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDownloadDialog()});
 </script></body></html>
