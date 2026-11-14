@@ -314,6 +314,23 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 .hero-art{margin-right:0}
 .form-panel{max-width:none}
 }
+
+/* CTA illustration aligned to the original GETS banner: three independent, rounded rays */
+.cta-panel{position:relative}
+.cta-graphic{position:absolute;inset:0 auto 0 0;width:65%;height:100%;overflow:hidden;pointer-events:none}
+.cta-graphic span{position:absolute;display:block;width:80%;height:clamp(60px,6vw,110px);background:#ff7962;border-radius:0 8px 8px 0;transform-origin:center center}
+.cta-graphic span:nth-child(1){left:-35%;top:-20%;transform:rotate(-40deg)}
+.cta-graphic span:nth-child(2){left:-16%;top:40%;transform:rotate(-27deg)}
+.cta-graphic span:nth-child(3){left:20%;top:79%;transform:rotate(-6deg)}
+.cta-content{grid-column:2;position:relative;z-index:1}
+@media(max-width:680px){
+.cta-graphic{position:relative;inset:auto;width:100%;height:140px;grid-column:1}
+.cta-graphic span{height:50px;width:76%}
+.cta-graphic span:nth-child(1){left:-38%;top:-34%;transform:rotate(-40deg)}
+.cta-graphic span:nth-child(2){left:-21%;top:36%;transform:rotate(-27deg)}
+.cta-graphic span:nth-child(3){left:22%;top:81%;transform:rotate(-6deg)}
+.cta-content{grid-column:1}
+}
 </style>
 </head>
 <body>
