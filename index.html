@@ -281,6 +281,39 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 .hero-photo,.hero-note,.hero .btn{transition:none!important}
 .hero-art:hover .hero-photo{transform:scale(1.31)}
 }
+
+/* Wider GETS-like layout: balanced full-width sections without oversized typography */
+:root{--content:1440px}
+.container{width:min(1440px,calc(100% - 96px));max-width:1440px}
+.hero-grid{grid-template-columns:47% 53%}
+.hero-copy{padding-right:7%;max-width:690px}
+.hero h1{max-width:650px}
+@media(min-width:901px){
+.hero-art{margin-right:calc(-1 * max(48px, (100vw - 1440px) / 2))}
+}
+.intro h2{max-width:930px}
+.intro p{max-width:810px}
+.journey-head{max-width:780px}
+.timeline{max-width:1320px;margin-inline:auto}
+.milestone-art{padding-inline:40px}
+.milestone-copy{padding-inline:clamp(35px,4vw,68px)}
+.cta-content{padding-right:clamp(35px,4vw,70px)}
+.download-layout{grid-template-columns:44% minmax(0,1fr);gap:7%}
+.download-copy h2{max-width:600px}
+.form-panel{max-width:680px;width:100%;justify-self:end}
+.footer-top{gap:7%}
+@media(min-width:681px) and (max-width:900px){
+.container{width:calc(100% - 56px)}
+.hero-art{margin-right:-28px}
+.hero-copy{padding-right:25px}
+}
+@media(max-width:680px){
+.container{width:calc(100% - 36px)}
+.hero-grid,.download-layout{grid-template-columns:1fr}
+.hero-copy{padding-right:0}
+.hero-art{margin-right:0}
+.form-panel{max-width:none}
+}
 </style>
 </head>
 <body>
