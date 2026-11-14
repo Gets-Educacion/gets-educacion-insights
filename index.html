@@ -238,6 +238,20 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 .footer-directory .footer-col a:hover .footer-arrow{transform:translate(2px,-2px);opacity:1}
 @media(max-width:680px){.footer-top{grid-template-columns:1fr;gap:38px}.footer-headline{font-size:clamp(24px,6.4vw,30px)}}
 @media(prefers-reduced-motion:reduce){.footer-arrow{transition:none}}
+
+/* Force a single straight diagonal edge around the hero image.
+   The source asset contains its own irregular/transparent shape, so we crop it
+   inside a clipped parent and enlarge the bitmap to move those source edges out. */
+@media(min-width:681px){
+.hero-art{clip-path:polygon(0 0,100% 0,100% 100%,22% 100%);overflow:hidden;isolation:isolate}
+.hero-photo{clip-path:none!important;border-radius:0!important;transform:scale(1.31);transform-origin:83% 50%;object-fit:cover}
+.hero-note{left:24%;bottom:24px}
+}
+@media(max-width:680px){
+.hero-art{clip-path:polygon(0 0,100% 0,100% 100%,10% 100%);overflow:hidden;isolation:isolate}
+.hero-photo{clip-path:none!important;transform:scale(1.25);transform-origin:85% 50%;object-fit:cover}
+.hero-note{left:15%;bottom:12px}
+}
 </style>
 </head>
 <body>
