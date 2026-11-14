@@ -263,7 +263,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 .download-dialog p{font-size:14px;line-height:1.5;margin:0 0 25px;color:#555}
 .download-dialog .btn{width:100%}
 @media(max-width:680px){.download-dialog{padding:30px 24px}.download-dialog h2{font-size:24px}}
-</style>
+.form-privacy-note{font-size:11px;line-height:1.6;color:#5d6069;margin:17px 0 0}.form-privacy-note a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}.form-privacy-note a:hover{color:#19199d}</style>
 </head>
 <body>
 <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
@@ -293,8 +293,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 <div class="field wide"><label for="email">Correo electrónico *</label><input name="email" id="email" type="email" autocomplete="email" placeholder="nombre@colegio.cl" maxlength="180" required></div>
 
 </div>
-<label class="checkbox-label"><input id="privacy" type="checkbox" required><span>Acepto el tratamiento de mis datos para gestionar la solicitud del informe, según la <a href="/privacidad.html" target="_blank" rel="noopener noreferrer" style="color:#2525EF;text-decoration:underline">información de privacidad de GETS</a>. *</span></label>
-<label class="checkbox-label"><input id="marketing" type="checkbox"><span>Deseo recibir nuevas investigaciones y comunicaciones de GETS (opcional).</span></label>
+<p class="form-privacy-note">Al solicitar la descarga, autorizas el uso de tus datos exclusivamente para gestionar el acceso al informe. Consulta nuestra <a href="/privacidad.html" target="_blank" rel="noopener noreferrer">política de privacidad</a>.</p>
 <button class="btn form-button" type="submit" id="submit"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Quiero descargar el informe</button><div class="status" id="status" role="status" aria-live="polite"></div><p class="form-footnote">Al enviar el formulario, recibirás un enlace temporal para descargar el informe. Tus datos se utilizarán según el aviso de privacidad de GETS.</p>
 </form></div></div></section>
 </main>
@@ -315,7 +314,7 @@ window.addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimation
 form.addEventListener("submit",async event=>{event.preventDefault();status.textContent="";
  if(!CONFIG.enabled||!CONFIG.apiUrl||!CONFIG.privacyUrl){status.textContent="La descarga estará disponible próximamente. Todavía no se reciben registros.";return}
  if(!form.reportValidity())return;
- const data=Object.fromEntries(new FormData(form).entries());data.acepta_privacidad=document.getElementById("privacy").checked;data.acepta_marketing=document.getElementById("marketing").checked;data.recurso="policy-brief-matricula-2026";
+ const data=Object.fromEntries(new FormData(form).entries());data.acepta_privacidad=true;data.acepta_marketing=false;data.recurso="policy-brief-matricula-2026";
  submit.disabled=true;
  try{const response=await fetch(CONFIG.apiUrl,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});if(!response.ok)throw new Error("No fue posible registrar los datos.");const result=await response.json();if(!result.downloadUrl||!/^https:\/\//.test(result.downloadUrl))throw new Error("La descarga aún no está disponible.");document.getElementById("download-pdf").href=result.downloadUrl;const overlay=document.getElementById("download-overlay");overlay.classList.add("is-open");overlay.setAttribute("aria-hidden","false");document.getElementById("download-close").focus();form.reset()}catch(error){status.textContent=error.message||"No fue posible completar la solicitud."}finally{submit.disabled=false}
 });
