@@ -126,6 +126,62 @@ body{background:#fff}
 .quote-inner h2{font-size:35px}
 .download-copy h2{font-size:47px}
 }
+
+/* GETS Insights editorial refinement */
+:root{--ink:#1A1A1A}
+body{overflow-x:hidden}
+.container{max-width:1320px}
+.hero-copy:before{height:3px}
+.hero{position:relative}
+.hero-content{min-height:735px}
+.hero-copy{padding-top:108px;padding-bottom:108px}
+.hero h1{max-width:760px;line-height:1.015;letter-spacing:-.068em}
+.hero-photo{min-height:735px;isolation:isolate}
+.hero-photo img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.hero-photo:hover img{transform:scale(1.035)}
+.hero-photo:before{content:"";position:absolute;left:-1px;bottom:0;z-index:1;width:84px;height:84px;background:var(--mint);clip-path:polygon(0 0,100% 100%,0 100%)}
+.hero .photo-tag{box-shadow:8px 8px 0 #ffffff90}
+.hero-meta{font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.section-header{align-items:center}
+.fact{position:relative;transition:padding-left .25s,background .25s}
+.fact:hover{padding-left:20px;background:#f7f9ff}
+.fact-arrow{transition:transform .25s}.fact:hover .fact-arrow{transform:translate(4px,-4px)}
+.editorial-break{background:var(--mint)}
+.editorial-grid{display:grid;grid-template-columns:52% 48%;min-height:620px}
+.editorial-photo{position:relative;min-height:620px;margin-left:calc((min(100vw,1320px) - 100vw)/2);overflow:hidden;background:#bcecd6}
+.editorial-photo img{width:100%;height:100%;object-fit:cover;object-position:center;position:absolute;inset:0}
+.editorial-photo-stamp{position:absolute;right:0;bottom:0;background:var(--yellow);padding:28px 32px;font-size:22px;line-height:1.05;letter-spacing:-.035em;font-weight:900;min-width:210px}
+.editorial-photo-stamp span{position:absolute;right:19px;top:17px;font-size:21px}
+.editorial-message{padding:80px 0 74px 13%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;position:relative}
+.editorial-message .mini-label{color:#16543b}
+.editorial-message h2{font-size:clamp(43px,4.45vw,69px);letter-spacing:-.065em;line-height:1.065;margin:34px 0 20px;max-width:630px}
+.editorial-message h2 em{font-style:normal;color:var(--blue)}
+.editorial-message p{font-size:17px;line-height:1.55;max-width:485px;margin:0 0 28px}
+.editorial-spark{position:absolute;right:0;top:55px;display:flex;gap:5px;transform:rotate(-25deg)}
+.editorial-spark span{display:block;width:15px;height:39px;background:var(--blue);transform-origin:center}
+.editorial-spark span:nth-child(1){height:23px;margin-top:16px;transform:rotate(-26deg)}
+.editorial-spark span:nth-child(2){height:42px;transform:rotate(-10deg)}
+.editorial-spark span:nth-child(3){height:53px;transform:rotate(8deg)}
+.editorial-spark span:nth-child(4){height:38px;transform:rotate(21deg)}
+.editorial-spark span:nth-child(5){height:22px;margin-top:15px;transform:rotate(36deg)}
+.text-link{font-size:13px;font-weight:800;border-bottom:2px solid var(--ink);padding:0 0 9px;display:inline-flex;gap:30px;align-items:center}
+.text-link:hover{color:var(--blue);border-color:var(--blue)}
+.question-section{position:relative}
+.question-section:before{content:"";position:absolute;top:0;right:6%;width:220px;height:20px;background:var(--yellow);transform:skew(-25deg)}
+.report-cover{transition:transform .35s,box-shadow .35s}
+.report-cover:hover{transform:translate(-5px,-5px);box-shadow:29px 29px 0 var(--mint)}
+.report-copy .byline{padding-top:17px;border-top:1px solid #e6e6e6}
+.quote-inner:after{pointer-events:none}
+.download-copy{position:relative}
+.download-copy:after{content:"";position:absolute;bottom:20px;left:0;width:130px;height:7px;background:var(--mint)}
+.field input{transition:background .2s,border-color .2s,box-shadow .2s}
+.field input:hover{background:#ffffff10}
+.submit{transition:background .2s,transform .2s}
+.submit:hover{background:var(--black);transform:translateY(-2px)}
+@media(max-width:1100px){.editorial-photo{margin-left:-32px}.editorial-grid{grid-template-columns:50% 50%}.editorial-message{padding-left:9%}.editorial-photo,.editorial-grid{min-height:550px}}
+@media(max-width:800px){.hero-content{min-height:0}.hero-photo{min-height:380px}.editorial-grid{grid-template-columns:1fr}.editorial-photo{margin:0 -22px;min-height:400px}.editorial-message{padding:72px 0}.editorial-break .editorial-spark{top:38px}.editorial-message h2{max-width:620px}.fact:hover{padding-left:0;background:transparent}}
+@media(max-width:500px){.hero-photo{min-height:285px}.editorial-photo{min-height:300px;margin:0 -18px}.editorial-photo-stamp{min-width:170px;font-size:18px;padding:24px}.editorial-message{padding:64px 0}.editorial-message h2{font-size:46px}.editorial-message p{font-size:15px}.editorial-spark{transform:scale(.7) rotate(-25deg);right:-12px;top:20px}.download-copy:after{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-photo img,.fact,.fact-arrow,.report-cover,.submit{transition:none!important}}
 </style>
 </head>
 <body>
@@ -139,7 +195,8 @@ body{background:#fff}
 <section id="hallazgos" class="section"><div class="container"><div class="section-header"><div><div class="mini-label eyebrow" style="color:var(--blue)">EL ESCENARIO QUE VIENE</div><h2>Menos matrícula. <em>Más decisiones por tomar.</em></h2></div><p class="section-description">No hablamos solo de números. Hablamos de presupuestos, proyectos educativos y comunidades que deberán adaptarse a una realidad diferente.</p></div>
 <div class="facts"><article class="fact"><div class="fact-number">~29%</div><div class="fact-body"><h3>Menos matrícula proyectada hacia 2035.</h3><p>En los niveles regulares, la reducción estimada ronda el 29%. No es un cambio puntual: las proyecciones muestran una contracción estructural.</p></div><span class="fact-arrow" aria-hidden="true">↗</span></article><article class="fact"><div class="fact-number">~1M</div><div class="fact-body"><h3>Un millón menos de estudiantes. Un sistema que debe adaptarse.</h3><p>La disminución aproximada proyectada obliga a anticipar decisiones sobre sostenibilidad, oferta educativa y recursos.</p></div><span class="fact-arrow" aria-hidden="true">↗</span></article><article class="fact"><div class="fact-number">2.491</div><div class="fact-body"><h3>La capacidad escolar también está en juego.</h3><p>El estudio estima establecimientos excedentes respecto de la matrícula proyectada. Es una medida de capacidad, no una predicción de cierres.</p></div><span class="fact-arrow" aria-hidden="true">↗</span></article></div>
 <p class="method-note">Fuente: Muñoz Pavez y Jiménez Acevedo, GETS, octubre de 2026. Proyecciones al 2035 bajo supuestos demográficos y educativos. Cifras redondeadas donde se indica.</p></div></section>
-<section id="preguntas" class="section question-section"><div class="container questions-layout"><div class="question-side"><div class="question-mark" aria-hidden="true">?</div><h2 class="section-title">El futuro no espera. La gestión tampoco.</h2><p>Cuatro preguntas que ningún equipo directivo debería dejar para después.</p></div><div class="question-list"><div class="question-item"><span>01</span><strong>¿Cómo sostener un proyecto educativo cuando disminuyen los ingresos por matrícula?</strong></div><div class="question-item"><span>02</span><strong>¿Qué pasará con la demanda escolar en los distintos territorios?</strong></div><div class="question-item"><span>03</span><strong>¿Cómo planificar infraestructura, dotaciones y recursos sin improvisar?</strong></div><div class="question-item"><span>04</span><strong>¿Cómo convertir este escenario en una oportunidad para mejorar la calidad?</strong></div></div></div></section>
+<section class="editorial-break" aria-label="El desafío de la transformación educativa"><div class="container editorial-grid"><div class="editorial-photo"><img src="https://cdn.prod.website-files.com/69497ae5cce6ea143f858137/6967ee6dd6924ad88b4ab7d0_Home_servicios-foto.png" alt="Comunidad educativa participando en actividades de aprendizaje" loading="lazy"><div class="editorial-photo-stamp">EDUCACIÓN<br>QUE SE<br>ANTICIPA <span>↗</span></div></div><div class="editorial-message"><span class="mini-label eyebrow">NO ES SOLO DEMOGRAFÍA</span><div class="editorial-spark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div><h2>Cambia la matrícula.<br><em>Cambia la manera de planificar.</em></h2><p>Menos estudiantes no significa menos desafíos. Significa mirar antes, decidir mejor y proteger lo más importante: las comunidades educativas.</p><a href="#informe" class="text-link">Explora las conclusiones <span aria-hidden="true">↗</span></a></div></div></section>
+<section id="preguntas" class="section question-section"><div class="container questions-layout"><div class="question-side"><div class="question-mark" aria-hidden="true">?</div><h2 class="section-title">El futuro no espera. La gestión tampoco.</h2><p>Cuatro preguntas que ningún equipo directivo debería dejar para después.</p></div><div class="question-list"><div class="question-item"><span>01</span><strong>¿Cómo sostener un proyecto educativo cuando disminuyen los ingresos por matrícula?</strong></div><div class="question-item"><span>02</span><strong>¿Tu institución está preparada para una demanda escolar diferente?</strong></div><div class="question-item"><span>03</span><strong>¿Qué ajustes conviene anticipar antes de que la matrícula caiga?</strong></div><div class="question-item"><span>04</span><strong>¿Cómo cuidar la calidad educativa mientras cambia el sistema?</strong></div></div></div></section>
 <section id="informe" class="section report"><div class="container report-layout"><div class="report-cover" role="img" aria-label="Representación gráfica de la portada del Policy Brief sobre la contracción de la matrícula escolar en Chile"><div class="cover-top"><img class="cover-logo" src="assets/gets-logo-white.svg" alt="GETS"><span>OCTUBRE · 2026</span></div><div class="confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="cover-title">La contracción de la matrícula escolar en Chile.</div><div class="cover-small">Efectos fiscales, territoriales e institucionales de la transición demográfica.<p>GETS / POLICY BRIEF</p></div></div><div class="report-copy"><div class="mini-label eyebrow">UN ESTUDIO PARA MIRAR MÁS ALLÁ</div><h2 class="section-title">Comprender el cambio es el primer paso para liderarlo.</h2><p>¿Qué implica la transición demográfica para los establecimientos? Este Policy Brief reúne evidencia, proyecciones y recomendaciones para comprender el escenario y actuar con anticipación.</p><p>Un análisis de matrícula, financiamiento, capacidad escolar y experiencias internacionales en 21 páginas.</p><a class="primary-cta" href="#descargar">Quiero leer el informe <span aria-hidden="true">↗</span></a><p class="byline">Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p></div></div></section>
 <section class="quote-banner"><div class="container quote-inner"><h2>Las decisiones que tomemos hoy pueden definir <span>la educación de mañana.</span></h2><a class="primary-cta" href="#descargar">Accede al estudio ↗</a></div></section>
 <section id="descargar" class="download"><div class="container download-grid"><div class="download-copy"><div class="mini-label eyebrow">CONVERSEMOS · GETS INSIGHTS</div><h2>El futuro de tu escuela merece decisiones informadas.</h2><p>Una investigación que pone sobre la mesa los datos, desafíos y oportunidades de la próxima década. Descarga el estudio completo.</p><p style="font-size:12px;opacity:.88">Policy Brief: La contracción de la matrícula escolar en Chile. Octubre de 2026 · 21 páginas.</p><div class="brand-large"><img class="download-logo" src="assets/gets-logo-white.svg" alt="GETS"></div></div>
