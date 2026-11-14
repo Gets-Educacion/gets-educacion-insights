@@ -176,12 +176,13 @@ h1,h2,h3,.btn,.eyebrow,.nav-links,.logo-link span,.hero-sub{font-family:"Mozaic 
 
 h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family:"Mozaic GEO",Arial,Helvetica,sans-serif}
 
-.cta-graphic{display:flex;align-items:center;overflow:hidden}
-.cta-official-art{display:block;width:120%;max-width:none;height:auto;transform:translateX(-17%) rotate(-10deg);transform-origin:center;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
-.cta-panel:hover .cta-official-art{transform:translateX(-12%) rotate(-7deg)}
-.cta-graphic span{display:none!important}
-@media(max-width:680px){.cta-graphic{height:155px}.cta-official-art{width:95%;transform:translate(-8%,-6%) rotate(-9deg)}.cta-panel:hover .cta-official-art{transform:translate(-8%,-6%) rotate(-9deg)}}
-@media(prefers-reduced-motion:reduce){.cta-official-art{transition:none}}
+
+
+/* CTA restored to GETS reference: soft coral modular shapes, restrained text. */
+.cta-panel{grid-template-columns:46% 54%}
+.cta-graphic span{background:#ff7962}
+.cta-content h2{font-size:clamp(27px,2.75vw,39px);line-height:1.22;max-width:530px}
+@media(max-width:680px){.cta-panel{grid-template-columns:1fr}.cta-graphic{height:140px}.cta-content h2{font-size:clamp(27px,7vw,34px)}}
 </style>
 </head>
 <body>
@@ -200,7 +201,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 <article class="milestone"><div class="milestone-art reveal"><div class="shape blue"><b>2.491</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">03 / CAPACIDAD EDUCATIVA</span><h3>El desafío va mucho más allá de llenar salas.</h3><p>El estudio estima 2.491 establecimientos excedentes al 2035: una medida de capacidad, no una predicción de cierres.</p></div></article>
 <article class="milestone"><div class="milestone-art reveal"><div class="shape orange"><b>2035</b></div></div><div class="milestone-copy reveal"><span class="eyebrow">04 / DECIDIR HOY</span><h3>Anticiparse puede marcar la diferencia.</h3><p>Para directores y sostenedores, comprender el contexto territorial y financiero es fundamental antes de tomar decisiones de largo plazo.</p></div></article>
 </div><p class="method-note">Fuente: Muñoz Pavez y Jiménez Acevedo, Policy Brief GETS, octubre de 2026. Proyecciones basadas en supuestos demográficos y de cobertura; cifras aproximadas y estimaciones, no resultados observados.</p></div></section>
-<section class="cta-wrap"><div class="container"><div class="cta-panel"><div class="cta-graphic" aria-hidden="true"><img class="cta-official-art" src="assets/servicio-ilustracion-cta.svg" alt=""></div><div class="cta-content reveal"><h2>No basta con reaccionar. <em>Necesitamos instituciones preparadas para liderar el cambio.</em></h2><a href="#descargar" class="btn"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Acceder al informe</a></div></div></div></section>
+<section class="cta-wrap"><div class="container"><div class="cta-panel"><div class="cta-graphic" aria-hidden="true"><span></span><span></span><span></span></div><div class="cta-content reveal"><h2>No basta con reaccionar. <em>Necesitamos instituciones preparadas para liderar el cambio.</em></h2><a href="#descargar" class="btn"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Acceder al informe</a></div></div></div></section>
 <section class="download" id="descargar"><div class="container download-layout">
 <div class="download-copy reveal"><span class="eyebrow">POLICY BRIEF · GETS INSIGHTS</span><h2>Comprender el cambio es el primer paso para liderarlo.</h2><p>Descarga <strong>La contracción de la matrícula escolar en Chile</strong>, un estudio que reúne evidencia, escenarios y recomendaciones sobre el futuro del sistema escolar.</p><p>Autores: Nicolás Muñoz Pavez y Humberto Jiménez Acevedo.</p><div class="download-meta">Informe de 21 páginas · Octubre de 2026</div></div>
 <div class="form-panel reveal"><h3>Descarga el Policy Brief</h3><p>Déjanos tus datos profesionales para acceder al estudio completo.</p>
