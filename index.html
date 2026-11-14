@@ -222,6 +222,12 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 @media(max-width:900px){.footer-top{gap:7%}.footer-directory{gap:24px}}
 @media(max-width:680px){.footer-top{grid-template-columns:1fr;gap:38px;padding-top:48px;padding-bottom:42px}.footer-headline{font-size:30px}.footer-directory{gap:20px}.footer-col a{font-size:13px}.footer-bottom{min-height:60px;font-size:10px}}
 @media(max-width:370px){.footer-directory{grid-template-columns:1fr;gap:30px}}
+
+/* Quieter footer links: no oversized arrow ornaments. */
+.footer-directory .footer-col a{justify-content:flex-start;gap:0;font-size:13px;font-weight:600;padding-bottom:11px}
+.footer-directory .footer-col a:hover{padding-left:5px;transition:padding-left .2s,color .2s,border-color .2s}
+.footer-headline{max-width:530px;font-size:clamp(25px,2.35vw,34px);line-height:1.22}
+@media(max-width:680px){.footer-headline{font-size:clamp(25px,7vw,32px)}}
 </style>
 </head>
 <body>
@@ -257,7 +263,7 @@ h1,h2,h3,.eyebrow,.btn,.nav-links,.logo-link span,.hero-sub,.shape b{font-family
 <button class="btn form-button" type="submit" id="submit"><svg class="cta-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Quiero descargar el informe</button><div class="status" id="status" role="status" aria-live="polite"></div><p class="form-footnote">El formulario todavía no recibe datos ni habilita descargas. Se activará cuando esté lista la conexión segura y la política de privacidad.</p>
 </form></div></div></section>
 </main>
-<footer class="footer"><div class="container footer-top"><div class="footer-identity"><span class="footer-kicker">GETS EDUCACIÓN</span><p class="footer-headline">Transformamos la educación.<br><span>Construimos lo que viene.</span></p><span class="footer-tagline">Gestión en Educación, Tecnología y Sustentabilidad</span></div><div class="footer-directory"><div class="footer-col"><span class="footer-col-title">EXPLORA GETS</span><a href="https://www.getseducacion.cl/servicios">Servicios <span aria-hidden="true">↗</span></a><a href="https://www.getseducacion.cl/equipo">Equipo <span aria-hidden="true">↗</span></a><a href="https://www.getseducacion.cl/metodologia">Metodología <span aria-hidden="true">↗</span></a></div><div class="footer-col"><span class="footer-col-title">SÍGUENOS</span><a href="https://www.instagram.com/getseducacion/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/company/getseducacion" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div><div class="container footer-bottom"><span>© 2026 GETS Educación</span><a href="https://www.getseducacion.cl/">getseducacion.cl <span aria-hidden="true">↗</span></a></div></footer>
+<footer class="footer"><div class="container footer-top"><div class="footer-identity"><span class="footer-kicker">GETS EDUCACIÓN</span><p class="footer-headline">Si tu escuela está enfrentando desafíos,<br><span>podemos trabajar contigo.</span></p><span class="footer-tagline">Gestión en Educación, Tecnología y Sustentabilidad</span></div><div class="footer-directory"><div class="footer-col"><span class="footer-col-title">EXPLORA GETS</span><a href="https://www.getseducacion.cl/servicios">Servicios</a><a href="https://www.getseducacion.cl/equipo">Equipo</a><a href="https://www.getseducacion.cl/metodologia">Metodología</a></div><div class="footer-col"><span class="footer-col-title">SÍGUENOS</span><a href="https://www.instagram.com/getseducacion/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.linkedin.com/company/getseducacion" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div><div class="container footer-bottom"><span>© 2026 GETS Educación</span><a href="https://www.getseducacion.cl/">getseducacion.cl</a></div></footer>
 <script>
 const CONFIG={apiUrl:"",privacyUrl:""};
 const form=document.getElementById("lead-form"),status=document.getElementById("status"),submit=document.getElementById("submit"),progress=document.getElementById("scroll-progress"),line=document.getElementById("timeline-progress"),timeline=document.getElementById("timeline");
