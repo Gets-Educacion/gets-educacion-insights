@@ -182,6 +182,145 @@ body{overflow-x:hidden}
 @media(max-width:800px){.hero-content{min-height:0}.hero-photo{min-height:380px}.editorial-grid{grid-template-columns:1fr}.editorial-photo{margin:0 -22px;min-height:400px}.editorial-message{padding:72px 0}.editorial-break .editorial-spark{top:38px}.editorial-message h2{max-width:620px}.fact:hover{padding-left:0;background:transparent}}
 @media(max-width:500px){.hero-photo{min-height:285px}.editorial-photo{min-height:300px;margin:0 -18px}.editorial-photo-stamp{min-width:170px;font-size:18px;padding:24px}.editorial-message{padding:64px 0}.editorial-message h2{font-size:46px}.editorial-message p{font-size:15px}.editorial-spark{transform:scale(.7) rotate(-25deg);right:-12px;top:20px}.download-copy:after{display:none}}
 @media(prefers-reduced-motion:reduce){.hero-photo img,.fact,.fact-arrow,.report-cover,.submit{transition:none!important}}
+
+/* GETS consistent scale — compact editorial hierarchy, desktop/tablet/mobile */
+:root{--content:1160px}
+.container{width:min(1160px,calc(100% - 72px));max-width:1160px}
+.header-inner{height:69px}
+.logo-image{width:93px}.brand-suffix{font-size:9px;margin-left:12px;padding-left:12px}
+.desktop-nav{gap:27px}.desktop-nav a{font-size:11px}.nav-pill{padding:10px 15px}
+.mini-label{font-size:10px;letter-spacing:.105em}.eyebrow:before{width:23px}
+.hero-content{grid-template-columns:54% 46%;min-height:495px}
+.hero-copy{padding:62px 8% 55px 0}
+.hero-copy:before{top:30px;width:88px;height:2px}
+.hero h1{font-size:clamp(39px,4.05vw,58px);line-height:1.07;letter-spacing:-.048em;margin:17px 0 17px;max-width:580px}
+.hero-lede{font-size:15px;line-height:1.5;max-width:430px;margin:0 0 23px}
+.primary-cta{font-size:12px;padding:12px 18px;gap:18px}
+.hero-meta{font-size:9px;margin-top:23px;letter-spacing:.04em}
+.hero-photo{min-height:495px;margin-right:calc((min(100vw,1160px) - 100vw)/2)}
+.hero-photo:before{height:54px;width:54px}
+.hero-photo .photo-tag{font-size:9px;padding:10px 13px;bottom:17px;right:17px;box-shadow:5px 5px 0 #ffffff8a}
+.strap-inner{min-height:56px}.strap p{font-size:10px}.strap small{font-size:10px}
+.section,#hallazgos{padding:77px 0}
+.section-header{gap:8%}
+.section-header h2,#hallazgos .section-header h2,.section-title{font-size:clamp(33px,3.25vw,47px);line-height:1.13;letter-spacing:-.042em;margin-top:15px}
+.section-description{font-size:14px;line-height:1.55;max-width:390px}
+.facts{margin-top:43px}
+.fact{grid-template-columns:27% 1fr 22px;gap:28px;padding:24px 0}
+.fact-number{font-size:clamp(49px,5.3vw,70px);letter-spacing:-.055em}
+.fact-body h3{font-size:clamp(19px,2vw,25px);letter-spacing:-.025em;line-height:1.19;margin-bottom:8px}
+.fact-body p{font-size:13px;line-height:1.5;max-width:590px}
+.fact-arrow{font-size:18px}
+.method-note{font-size:10px;margin-top:18px}
+.editorial-grid{grid-template-columns:52% 48%;min-height:450px}
+.editorial-photo{min-height:450px;margin-left:calc((min(100vw,1160px) - 100vw)/2)}
+.editorial-message{padding:50px 0 50px 10%}
+.editorial-message h2{font-size:clamp(32px,3.35vw,46px);line-height:1.12;letter-spacing:-.044em;margin:25px 0 14px}
+.editorial-message p{font-size:14px;line-height:1.5;margin-bottom:22px}
+.editorial-photo-stamp{font-size:16px;min-width:152px;padding:18px 20px}
+.editorial-photo-stamp span{font-size:16px;right:14px;top:10px}
+.editorial-spark{top:28px;transform:scale(.58) rotate(-25deg);transform-origin:top right}
+.text-link{font-size:11px;padding-bottom:7px;gap:19px}
+.questions-layout{grid-template-columns:39% 1fr;gap:9%}
+.question-mark{font-size:80px;margin:6px 0 19px}
+.question-section .section-title{font-size:clamp(31px,3.15vw,44px);line-height:1.14}
+.question-side p{font-size:14px;line-height:1.5}
+.question-item{padding:17px 0;grid-template-columns:32px 1fr;gap:12px}
+.question-item strong{font-size:15px;line-height:1.35}
+.question-item span{font-size:10px}
+.question-section:before{width:120px;height:9px}
+.report{padding:83px 0 94px}
+.report-layout{grid-template-columns:42% 1fr;gap:8%}
+.report-cover{min-height:455px;padding:29px;box-shadow:14px 14px 0 var(--mint)}
+.report-cover:hover{box-shadow:17px 17px 0 var(--mint);transform:translate(-3px,-3px)}
+.cover-logo{width:85px}
+.cover-title{font-size:clamp(31px,3.3vw,44px);letter-spacing:-.043em;line-height:1.11}
+.cover-small{font-size:10px}
+.confetti i{height:38px}
+.report-copy .section-title{font-size:clamp(32px,3.35vw,47px)}
+.report-copy p{font-size:14px;line-height:1.55}
+.report-copy .primary-cta{margin-top:12px}
+.report-copy .byline{font-size:10px;margin-top:21px}
+.quote-inner{min-height:175px}
+.quote-inner h2{font-size:clamp(26px,2.8vw,36px);line-height:1.18;max-width:630px}
+.quote-inner:after{width:68px;height:68px;top:-34px}
+.download{padding:75px 0 62px}
+.download-grid{gap:0}
+.download-copy h2{font-size:clamp(34px,3.45vw,49px);line-height:1.13;margin:17px 0}
+.download-copy p{font-size:14px;line-height:1.55}
+.download-copy .brand-large{margin-top:44px}
+.download-logo{width:148px}
+.form-wrap{padding:7px 0 0 7%}
+.form-wrap h3{font-size:23px}.form-wrap>p{font-size:12px;margin-bottom:18px}
+.field{margin-bottom:12px}.field label{font-size:10px;margin-bottom:6px}
+.field input{height:40px;font-size:12px;padding:10px 14px}
+.check{font-size:11px;margin:11px 0}
+.submit{font-size:11px;padding:12px 18px}
+.footer-inner{min-height:75px;font-size:10px}.footer-logo{width:91px}
+@media(max-width:1000px){
+.container{width:calc(100% - 56px)}
+.hero-content{grid-template-columns:54% 46%}
+.hero-photo{margin-right:-28px}
+.hero h1{font-size:clamp(36px,4.5vw,48px)}
+.editorial-photo{margin-left:-28px}
+}
+@media(max-width:800px){
+.container{width:calc(100% - 44px)}
+.header-inner{height:64px}.desktop-nav.open{top:64px}
+.hero-content{grid-template-columns:1fr;min-height:0}
+.hero-copy{padding:67px 0 45px}
+.hero-copy:before{top:31px}
+.hero h1{max-width:650px;font-size:clamp(37px,6.3vw,50px)}
+.hero-photo{margin:0 -22px;min-height:295px;height:295px}
+.section,#hallazgos{padding:67px 0}
+.section-header,.questions-layout,.report-layout,.download-grid{grid-template-columns:1fr;gap:22px}
+.section-header h2,#hallazgos .section-header h2,.section-title{font-size:clamp(32px,5vw,43px)}
+.facts{margin-top:33px}
+.fact{grid-template-columns:27% 1fr 18px;gap:14px;padding:21px 0}
+.fact-number{font-size:clamp(40px,6.6vw,64px)}
+.editorial-grid{grid-template-columns:1fr;min-height:0}
+.editorial-photo{margin:0 -22px;min-height:320px;height:320px}
+.editorial-message{padding:57px 0}
+.editorial-message h2{font-size:clamp(34px,5.2vw,45px)}
+.question-mark{font-size:68px;margin:5px 0 17px}
+.question-section .section-title{font-size:clamp(32px,4.6vw,42px)}
+.question-list{padding-top:7px}
+.report{padding:68px 0 79px}.report-cover{min-height:440px;max-width:440px}
+.report-copy .section-title{font-size:clamp(32px,5vw,44px)}
+.quote-inner{padding:44px 0;min-height:0}
+.download{padding:68px 0}
+.download-copy h2{font-size:clamp(34px,5.5vw,48px)}
+.form-wrap{padding:27px 0 0;border-left:0;border-top:1px solid #ffffff66}
+}
+@media(max-width:500px){
+.container{width:calc(100% - 36px)}
+.header-inner{height:60px}.desktop-nav.open{top:60px}
+.logo-image{width:86px}.brand-suffix{font-size:8px}
+.hero-copy{padding:64px 0 40px}.hero h1{font-size:clamp(35px,9vw,42px);line-height:1.1}
+.hero-lede{font-size:14px}.hero-photo{min-height:225px;height:225px;margin:0 -18px}
+.hero-photo .photo-tag{font-size:8px;padding:8px 10px}
+.strap-inner{min-height:60px;gap:10px}
+.strap p,.strap small{font-size:9px}
+.section,#hallazgos{padding:56px 0}
+.section-header h2,#hallazgos .section-header h2,.section-title{font-size:clamp(31px,8vw,38px)}
+.section-description{font-size:13px}
+.fact{grid-template-columns:1fr 16px;gap:9px;padding:19px 0}
+.fact-number{font-size:49px;grid-column:1 / -1}
+.fact-body h3{font-size:20px}.fact-body p{font-size:12px}
+.fact-arrow{font-size:16px}
+.editorial-photo{height:245px;min-height:245px;margin:0 -18px}
+.editorial-photo-stamp{font-size:13px;padding:15px 17px;min-width:130px}
+.editorial-message{padding:52px 0}.editorial-message h2{font-size:clamp(31px,8vw,38px)}
+.editorial-message p{font-size:13px}
+.question-mark{font-size:60px}.question-section .section-title{font-size:clamp(30px,7.8vw,37px)}
+.question-item{padding:17px 0}.question-item strong{font-size:14px}
+.report-cover{min-height:380px;padding:24px}.cover-title{font-size:clamp(30px,8vw,37px)}
+.report-copy .section-title{font-size:clamp(31px,8vw,38px)}
+.quote-inner h2{font-size:clamp(25px,6.8vw,32px)}
+.download-copy h2{font-size:clamp(33px,8vw,40px)}
+.download-copy p{font-size:13px}
+.footer-inner{min-height:0;padding:20px 0}
+}
 </style>
 </head>
 <body>
